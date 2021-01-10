@@ -1,0 +1,58 @@
+.inline-image + .copy {
+  padding-top: 12px;
+}
+.section-heading {
+  .eyebrow {
+    width: 90px;
+    height: 5px;
+    background-color: $color-seafoam;
+    display: inline-block;
+  }
+  .section-heading-text {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+// page specific section styling
+.home-page {
+  .posts {
+    margin-top: 50px;
+    @include respond-up(small) {
+      margin-top: 70px;
+    }
+    @include respond-up(medium) {
+      margin-top: 90px;
+    }
+  }
+}
+
+.portfolio-page {
+  .portfolio {
+    .project-card-container {
+      .project-card {
+        &.position-0 {
+          margin-top: 0;
+        }
+        &.position-1 {
+          margin-top: 30px;
+          @include respond-down(small) {
+            margin-top: 0;
+          }
+        }
+        &.position-2 {
+          margin-top: -30px;
+          @include respond-down(small) {
+            margin-top: 0;
+          }
+        }
+        &.position-3 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+// Breakpoint Mixins
+$breakpoints: (
+	'xsmall': 370px,
+	'small': 767px,
+	'medium': 1105px,
+	'large': 1300px
+) !default;
+
+@mixin icon-font {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin respond-up($breakpoint) {
+	// If the key exists in the map
+	@if map-has-key($breakpoints, $breakpoint) {
+		// Prints a media query based on the value
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+
+	// If the key doesn't exist in the map
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+				+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+@mixin respond-down($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+				+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+@mixin container-breakpoints {
+	max-width: 88%;
+
+	@include respond-up('small') {
+		max-width: 700px;
+	}
+	@include respond-up('medium') {
+		max-width: 900px;
+	}
+	@include respond-up('large') {
+		max-width: 1000px;
+	}
+}
+
+@mixin clear-fix($pseudo: after) {
+	&:#{$pseudo} {
+		content: ' ';
+		clear: both;
+		display: block;
+	}
+}
+
+@mixin underline-link($state: inactive, $underlineHeight: 2px, $bottomPosition: -5px, $color: $color-seafoam) {
+	@if ($state == inactive) {
+		text-decoration: none;
+		color: inherit;
+		position: relative;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: $bottomPosition;
+			width: 0px;
+			height: $underlineHeight;
+			margin: 0;
+			transition: all 0.2s ease-in-out;
+			transition-duration: 0.15s;
+			opacity: 0;
+			background-color: $color;
+			left: 0;
+		}
+	}
+	@else {
+		&:before,
+		&:after {
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}

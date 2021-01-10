@@ -1,0 +1,944 @@
+$column-padding: 20px;
+
+.container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	@include container-breakpoints;
+	@include clear-fix;
+}
+
+.row {
+    margin-left: -$column-padding;
+    margin-right: -$column-padding;
+}
+
+[class^="col-"], [class*=" col-"] {
+	padding: $column-padding;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+}
+
+// General Styles //
+@mixin vertical-align-middle {
+	vertical-align: middle;
+}
+@mixin text-align-right {
+	text-align: right;
+}
+@mixin text-align-left {
+	text-align: left;
+}
+@mixin text-align-center {
+	text-align: center;
+}
+@mixin text-align-auto {
+	text-align: auto;
+}
+
+@mixin p-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+@mixin px-0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+@mixin py-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+@mixin py-1 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+@mixin py-5 {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+@mixin py-10 {
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+@mixin d-none {
+	display: none;
+}
+@mixin d-inline-block {
+	display: inline-block;
+}
+
+@mixin position-relative {
+	position: relative;
+}
+
+@mixin default-col-padding {
+	padding-left: $column-padding;
+	padding-right: $column-padding;
+}
+
+.position-relative {
+	@include position-relative;
+}
+.vertical-align-middle {
+	@include vertical-align-middle;
+}
+.text-align-right {
+	@include text-align-right;
+}
+.text-align-left {
+	@include text-align-left;
+}
+.text-align-center {
+	@include text-align-center;
+}
+.text-align-auto {
+	@include text-align-auto;
+}
+.p-0 {
+	@include p-0;
+}
+.py-0 {
+	@include py-0;
+}
+.py-1 {
+	@include py-1;
+}
+.py-5 {
+	@include py-5;
+}
+.py-10 {
+	@include py-10;
+}
+.d-none {
+	@include d-none;
+}
+.d-inline-block {
+	@include d-inline-block;
+}
+
+// End General Styling //
+
+
+// Start Column Styling //
+@mixin col-0 {
+	width: 0;
+	@include px-0;
+}
+
+@mixin col-100 {
+	width: 100%;
+	@include default-col-padding;
+}
+@mixin col-1-2 {
+	width: 50%;
+	@include default-col-padding;
+}
+@mixin col-1-3 {
+	width: 33.33%;
+	width: calc(100% / 3);
+	@include default-col-padding;
+}
+@mixin col-2-3 {
+	width: 33.33% * 2;
+	width: calc((100% / 3) * 2);
+	@include default-col-padding;
+}
+@mixin col-1-4 {
+	width: 25%;
+	@include default-col-padding;
+}
+@mixin col-2-4 {
+	width: 25% * 2;
+	@include default-col-padding;
+}
+@mixin col-3-4 {
+	width: 25% * 3;
+	@include default-col-padding;
+}
+@mixin col-1-8 {
+	width: 12.5%;
+	@include default-col-padding;
+}
+@mixin col-2-8 {
+	width: 12.5% * 2;
+	@include default-col-padding;
+}
+@mixin col-3-8 {
+	width: 12.5% * 3;
+	@include default-col-padding;
+}
+@mixin col-4-8 {
+	width: 12.5% * 4;
+	@include default-col-padding;
+}
+@mixin col-5-8 {
+	width: 12.5% * 5;
+	@include default-col-padding;
+}
+@mixin col-6-8 {
+	width: 12.5% * 6;
+	@include default-col-padding;
+}
+@mixin col-7-8 {
+	width: 12.5% * 7;
+	@include default-col-padding;
+}
+@mixin col-1-10 {
+	width: 10%;
+	@include default-col-padding;
+}
+@mixin col-2-10 {
+	width: 10% * 2;
+	@include default-col-padding;
+}
+@mixin col-3-10 {
+	width: 10% * 3;
+	@include default-col-padding;
+}
+@mixin col-4-10 {
+	width: 10% * 4;
+	@include default-col-padding;
+}
+@mixin col-5-10 {
+	width: 10% * 5;
+	@include default-col-padding;
+}
+@mixin col-6-10 {
+	width: 10% * 6;
+	@include default-col-padding;
+}
+@mixin col-7-10 {
+	width: 10% * 7;
+	@include default-col-padding;
+}
+@mixin col-8-10 {
+	width: 10% * 8;
+	@include default-col-padding;
+}
+@mixin col-9-10 {
+	width: 10% * 9;
+	@include default-col-padding;
+}
+@mixin col-1-12 {
+	width: (100% / 12);
+	@include default-col-padding;
+}
+@mixin col-2-12 {
+	width: (100% / 12) * 2;
+	@include default-col-padding;
+}
+@mixin col-3-12 {
+	width: (100% / 12) * 3;
+	@include default-col-padding;
+}
+@mixin col-4-12 {
+	width: (100% / 12) * 4;
+	@include default-col-padding;
+}
+@mixin col-5-12 {
+	width: (100% / 12) * 5;
+	@include default-col-padding;
+}
+@mixin col-6-12 {
+	width: (100% / 12) * 6;
+	@include default-col-padding;
+}
+@mixin col-7-12 {
+	width: (100% / 12) * 7;
+	@include default-col-padding;
+}
+@mixin col-8-12 {
+	width: (100% / 12) * 8;
+	@include default-col-padding;
+}
+@mixin col-9-12 {
+	width: (100% / 12) * 9;
+	@include default-col-padding;
+}
+@mixin col-10-12 {
+	width: (100% / 12) * 10;
+	@include default-col-padding;
+}
+@mixin col-11-12 {
+	width: (100% / 12) * 11;
+	@include default-col-padding;
+}
+
+// Default //
+.col-0 {
+	@include col-0;
+}
+.col-100 {
+	@include col-100;
+}
+.col-1-2 {
+	@include col-1-2;
+}
+.col-1-3 {
+	@include col-1-3;
+}
+.col-2-3 {
+	@include col-2-3;
+}
+.col-1-4 {
+	@include col-1-4;
+}
+.col-2-4 {
+	@include col-2-4;
+}
+.col-3-4 {
+	@include col-3-4;
+}
+.col-1-8 {
+	@include col-1-8;
+}
+.col-2-8 {
+	@include col-2-8;
+}
+.col-3-8 {
+	@include col-3-8;
+}
+.col-4-8 {
+	@include col-4-8;
+}
+.col-5-8 {
+	@include col-5-8;
+}
+.col-6-8 {
+	@include col-6-8;
+}
+.col-7-8 {
+	@include col-7-8;
+}
+.col-1-10 {
+    @include col-1-10;
+}
+.col-2-10 {
+    @include col-2-10;
+}
+.col-3-10 {
+    @include col-3-10;
+}
+.col-4-10 {
+    @include col-4-10;
+}
+.col-5-10 {
+    @include col-5-10;
+}
+.col-6-10 {
+    @include col-6-10;
+}
+.col-7-10 {
+    @include col-7-10;
+}
+.col-8-10 {
+    @include col-8-10;
+}
+.col-9-10 {
+    @include col-9-10;
+}
+.col-1-12 {
+    @include col-1-12;
+}
+.col-2-12 {
+    @include col-2-12;
+}
+.col-3-12 {
+    @include col-3-12;
+}
+.col-4-12 {
+    @include col-4-12;
+}
+.col-5-12 {
+    @include col-5-12;
+}
+.col-6-12 {
+    @include col-6-12;
+}
+.col-7-12 {
+    @include col-7-12;
+}
+.col-8-12 {
+    @include col-8-12;
+}
+.col-9-12 {
+    @include col-9-12;
+}
+.col-10-12 {
+    @include col-10-12;
+}
+.col-11-12 {
+    @include col-11-12;
+}
+
+// xsmall //
+@include respond-up(xsmall) {
+	.col-xsmall-100 {
+		@include col-100;
+	}
+	.col-xsmall-1-2 {
+		@include col-1-2;
+	}
+	.col-xsmall-1-3 {
+		@include col-1-3;
+	}
+	.col-xsmall-2-3 {
+		@include col-2-3;
+	}
+	.col-xsmall-1-4 {
+		@include col-1-4;
+	}
+	.col-xsmall-2-4 {
+		@include col-2-4;
+	}
+	.col-xsmall-3-4 {
+		@include col-3-4;
+	}
+	.col-xsmall-1-8 {
+		@include col-1-8;
+	}
+	.col-xsmall-2-8 {
+		@include col-2-8;
+	}
+	.col-xsmall-3-8 {
+		@include col-3-8;
+	}
+	.col-xsmall-4-8 {
+		@include col-4-8;
+	}
+	.col-xsmall-5-8 {
+		@include col-5-8;
+	}
+	.col-xsmall-6-8 {
+		@include col-6-8;
+	}
+	.col-xsmall-7-8 {
+		@include col-7-8;
+	}
+	.col-xsmall-1-10 {
+		@include col-1-10;
+	}
+	.col-xsmall-2-10 {
+		@include col-2-10;
+	}
+	.col-xsmall-3-10 {
+		@include col-3-10;
+	}
+	.col-xsmall-4-10 {
+		@include col-4-10;
+	}
+	.col-xsmall-5-10 {
+		@include col-5-10;
+	}
+	.col-xsmall-6-10 {
+		@include col-6-10;
+	}
+	.col-xsmall-7-10 {
+		@include col-7-10;
+	}
+	.col-xsmall-8-10 {
+		@include col-8-10;
+	}
+	.col-xsmall-9-10 {
+		@include col-9-10;
+	}
+	.col-xsmall-1-12 {
+		@include col-1-12;
+	}
+	.col-xsmall-2-12 {
+		@include col-2-12;
+	}
+	.col-xsmall-3-12 {
+		@include col-3-12;
+	}
+	.col-xsmall-4-12 {
+		@include col-4-12;
+	}
+	.col-xsmall-5-12 {
+		@include col-5-12;
+	}
+	.col-xsmall-6-12 {
+		@include col-6-12;
+	}
+	.col-xsmall-7-12 {
+		@include col-7-12;
+	}
+	.col-xsmall-8-12 {
+		@include col-8-12;
+	}
+	.col-xsmall-9-12 {
+		@include col-9-12;
+	}
+	.col-xsmall-10-12 {
+		@include col-10-12;
+	}
+	.col-xsmall-11-12 {
+		@include col-11-12;
+	}
+
+	.vertical-align-xsmall-middle {
+		@include vertical-align-middle;
+	}
+	.text-align-xsmall-right {
+		@include text-align-right;
+	}
+	.text-align-xsmall-left {
+		@include text-align-left;
+	}
+	.text-align-xsmall-center {
+		@include text-align-center;
+	}
+	.text-align-xsmall-auto {
+		@include text-align-auto;
+	}
+
+	.py-xsmall-0 {
+		@include py-0;
+	}
+	.py-xsmall-1 {
+		@include py-1;
+	}
+	.py-xsmall-5 {
+		@include py-5;
+	}
+	.py-xsmall-10 {
+		@include py-10;
+	}
+
+	.d-xsmall-none {
+		@include d-none;
+	}
+	.d-xsmall-inline-block {
+		@include d-inline-block;
+	}
+}
+
+// small //
+@include respond-up(small) {
+	.col-small-100 {
+		@include col-100;
+	}
+	.col-small-1-2 {
+		@include col-1-2;
+	}
+	.col-small-1-3 {
+		@include col-1-3;
+	}
+	.col-small-2-3 {
+		@include col-2-3;
+	}
+	.col-small-1-4 {
+		@include col-1-4;
+	}
+	.col-small-2-4 {
+		@include col-2-4;
+	}
+	.col-small-3-4 {
+		@include col-3-4;
+	}
+	.col-small-1-8 {
+		@include col-1-8;
+	}
+	.col-small-2-8 {
+		@include col-2-8;
+	}
+	.col-small-3-8 {
+		@include col-3-8;
+	}
+	.col-small-4-8 {
+		@include col-4-8;
+	}
+	.col-small-5-8 {
+		@include col-5-8;
+	}
+	.col-small-6-8 {
+		@include col-6-8;
+	}
+	.col-small-7-8 {
+		@include col-7-8;
+	}
+	.col-small-1-10 {
+		@include col-1-10;
+	}
+	.col-small-2-10 {
+		@include col-2-10;
+	}
+	.col-small-3-10 {
+		@include col-3-10;
+	}
+	.col-small-4-10 {
+		@include col-4-10;
+	}
+	.col-small-5-10 {
+		@include col-5-10;
+	}
+	.col-small-6-10 {
+		@include col-6-10;
+	}
+	.col-small-7-10 {
+		@include col-7-10;
+	}
+	.col-small-8-10 {
+		@include col-8-10;
+	}
+	.col-small-9-10 {
+		@include col-9-10;
+	}
+	.col-small-1-12 {
+		@include col-1-12;
+	}
+	.col-small-2-12 {
+		@include col-2-12;
+	}
+	.col-small-3-12 {
+		@include col-3-12;
+	}
+	.col-small-4-12 {
+		@include col-4-12;
+	}
+	.col-small-5-12 {
+		@include col-5-12;
+	}
+	.col-small-6-12 {
+		@include col-6-12;
+	}
+	.col-small-7-12 {
+		@include col-7-12;
+	}
+	.col-small-8-12 {
+		@include col-8-12;
+	}
+	.col-small-9-12 {
+		@include col-9-12;
+	}
+	.col-small-10-12 {
+		@include col-10-12;
+	}
+	.col-small-11-12 {
+		@include col-11-12;
+	}
+
+	.vertical-align-small-middle {
+		@include vertical-align-middle;
+	}
+	.text-align-small-right {
+		@include text-align-right;
+	}
+	.text-align-small-left {
+		@include text-align-left;
+	}
+	.text-align-small-center {
+		@include text-align-center;
+	}
+	.text-align-small-auto {
+		@include text-align-auto;
+	}
+
+	.py-small-0 {
+		@include py-0;
+	}
+	.py-small-1 {
+		@include py-1;
+	}
+	.py-small-5 {
+		@include py-5;
+	}
+	.py-small-10 {
+		@include py-10;
+	}
+
+	.d-small-none {
+		@include d-none;
+	}
+	.d-small-inline-block {
+		@include d-inline-block;
+	}
+}
+
+// medium //
+@include respond-up(medium) {
+	.col-medium-100 {
+		@include col-100;
+	}
+	.col-medium-1-2 {
+		@include col-1-2;
+	}
+	.col-medium-1-3 {
+		@include col-1-3;
+	}
+	.col-medium-2-3 {
+		@include col-2-3;
+	}
+	.col-medium-1-4 {
+		@include col-1-4;
+	}
+	.col-medium-2-4 {
+		@include col-2-4;
+	}
+	.col-medium-3-4 {
+		@include col-3-4;
+	}
+	.col-medium-1-8 {
+		@include col-1-8;
+	}
+	.col-medium-2-8 {
+		@include col-2-8;
+	}
+	.col-medium-3-8 {
+		@include col-3-8;
+	}
+	.col-medium-4-8 {
+		@include col-4-8;
+	}
+	.col-medium-5-8 {
+		@include col-5-8;
+	}
+	.col-medium-6-8 {
+		@include col-6-8;
+	}
+	.col-medium-7-8 {
+		@include col-7-8;
+	}
+	.col-medium-1-10 {
+		@include col-1-10;
+	}
+	.col-medium-2-10 {
+		@include col-2-10;
+	}
+	.col-medium-3-10 {
+		@include col-3-10;
+	}
+	.col-medium-4-10 {
+		@include col-4-10;
+	}
+	.col-medium-5-10 {
+		@include col-5-10;
+	}
+	.col-medium-6-10 {
+		@include col-6-10;
+	}
+	.col-medium-7-10 {
+		@include col-7-10;
+	}
+	.col-medium-8-10 {
+		@include col-8-10;
+	}
+	.col-medium-9-10 {
+		@include col-9-10;
+	}
+	.col-medium-1-12 {
+		@include col-1-12;
+	}
+	.col-medium-2-12 {
+		@include col-2-12;
+	}
+	.col-medium-3-12 {
+		@include col-3-12;
+	}
+	.col-medium-4-12 {
+		@include col-4-12;
+	}
+	.col-medium-5-12 {
+		@include col-5-12;
+	}
+	.col-medium-6-12 {
+		@include col-6-12;
+	}
+	.col-medium-7-12 {
+		@include col-7-12;
+	}
+	.col-medium-8-12 {
+		@include col-8-12;
+	}
+	.col-medium-9-12 {
+		@include col-9-12;
+	}
+	.col-medium-10-12 {
+		@include col-10-12;
+	}
+	.col-medium-11-12 {
+		@include col-11-12;
+	}
+
+	.vertical-align-medium-middle {
+		@include vertical-align-middle;
+	}
+	.text-align-medium-right {
+		@include text-align-right;
+	}
+	.text-align-medium-left {
+		@include text-align-left;
+	}
+	.text-align-medium-center {
+		@include text-align-center;
+	}
+	.text-align-medium-auto {
+		@include text-align-auto;
+	}
+
+	.py-medium-0 {
+		@include py-0;
+	}
+	.py-medium-1 {
+		@include py-1;
+	}
+	.py-medium-5 {
+		@include py-5;
+	}
+	.py-medium-10 {
+		@include py-10;
+	}
+
+	.d-medium-none {
+		@include d-none;
+	}
+	.d-medium-inline-block {
+		@include d-inline-block;
+	}
+}
+
+// large //
+@include respond-up(large) {
+	.col-large-100 {
+		@include col-100;
+	}
+	.col-large-1-2 {
+		@include col-1-2;
+	}
+	.col-large-1-3 {
+		@include col-1-3;
+	}
+	.col-large-2-3 {
+		@include col-2-3;
+	}
+	.col-large-1-4 {
+		@include col-1-4;
+	}
+	.col-large-2-4 {
+		@include col-2-4;
+	}
+	.col-large-3-4 {
+		@include col-3-4;
+	}
+	.col-large-1-8 {
+		@include col-1-8;
+	}
+	.col-large-2-8 {
+		@include col-2-8;
+	}
+	.col-large-3-8 {
+		@include col-3-8;
+	}
+	.col-large-4-8 {
+		@include col-4-8;
+	}
+	.col-large-5-8 {
+		@include col-5-8;
+	}
+	.col-large-6-8 {
+		@include col-6-8;
+	}
+	.col-large-7-8 {
+		@include col-7-8;
+	}
+	.col-large-1-10 {
+		@include col-1-10;
+	}
+	.col-large-2-10 {
+		@include col-2-10;
+	}
+	.col-large-3-10 {
+		@include col-3-10;
+	}
+	.col-large-4-10 {
+		@include col-4-10;
+	}
+	.col-large-5-10 {
+		@include col-5-10;
+	}
+	.col-large-6-10 {
+		@include col-6-10;
+	}
+	.col-large-7-10 {
+		@include col-7-10;
+	}
+	.col-large-8-10 {
+		@include col-8-10;
+	}
+	.col-large-9-10 {
+		@include col-9-10;
+	}
+	.col-large-1-12 {
+		@include col-1-12;
+	}
+	.col-large-2-12 {
+		@include col-2-12;
+	}
+	.col-large-3-12 {
+		@include col-3-12;
+	}
+	.col-large-4-12 {
+		@include col-4-12;
+	}
+	.col-large-5-12 {
+		@include col-5-12;
+	}
+	.col-large-6-12 {
+		@include col-6-12;
+	}
+	.col-large-7-12 {
+		@include col-7-12;
+	}
+	.col-large-8-12 {
+		@include col-8-12;
+	}
+	.col-large-9-12 {
+		@include col-9-12;
+	}
+	.col-large-10-12 {
+		@include col-10-12;
+	}
+	.col-large-11-12 {
+		@include col-11-12;
+	}
+
+	.vertical-align-large-middle {
+		@include vertical-align-middle;
+	}
+	.text-align-large-right {
+		@include text-align-right;
+	}
+	.text-align-large-left {
+		@include text-align-left;
+	}
+	.text-align-large-center {
+		@include text-align-center;
+	}
+	.text-align-large-auto {
+		@include text-align-auto;
+	}
+
+	.py-large-0 {
+		@include py-0;
+	}
+	.py-large-1 {
+		@include py-1;
+	}
+	.py-large-5 {
+		@include py-5;
+	}
+	.py-large-10 {
+		@include py-10;
+	}
+
+	.d-large-none {
+		@include d-none;
+	}
+	.d-large-inline-block {
+		@include d-inline-block;
+	}
+}

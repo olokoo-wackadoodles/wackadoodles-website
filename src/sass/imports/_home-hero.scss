@@ -1,0 +1,59 @@
+.home-hero {
+	background-color: $color-yellow;
+	padding: 50px 0;
+
+	@include respond-up(small) {
+		padding: 90px 0;
+	}
+
+	@include respond-up(medium) {
+		padding: 130px 0;
+	}
+
+	.hero-heading {
+		h1,
+		h2 {
+			color: $color-white;
+		}
+		h1 {
+			font-size: 66px;
+			line-height: 58px;
+		}
+		h2 {
+			font-size: 52px;
+		}
+	}
+
+	.hero-content {
+		width: 100%;
+		margin-top: 40px;
+		p {
+			font-size: $tiny;
+			color: $color-white;
+		}
+	}
+
+	$cover-image-size: 350px;
+	$cover-image-outset-offset: 30px;
+	.cover-image {
+		position: relative;
+		width: $cover-image-size + $cover-image-outset-offset;
+		height: $cover-image-size + $cover-image-outset-offset;
+		float: right;
+		@include clear-fix;
+		img,
+		.cover-image-outset {
+			position: absolute;
+			width: $cover-image-size;
+			height: $cover-image-size;
+			z-index: 2;
+		}
+
+		.cover-image-outset {
+			top: $cover-image-outset-offset;
+			left: $cover-image-outset-offset;
+			background-color: $color-blue-normal;
+			z-index: 1;
+		}
+	}
+}

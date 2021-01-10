@@ -1,0 +1,48 @@
+// colors
+$blue: #4285F4;
+$gray: rgba(0, 0, 0, .64);
+
+$color-white: #ffffff;
+$color-gray-1: #f7f7f7;
+$color-gray-2: #ececec;
+$color-black-0: #000000;
+$color-black-1: #222222;
+$color-black-2: #222222;
+$color-black-5: #555555;
+$color-salmon: #ff4444;
+$color-seafoam: #0fcabf;
+
+// Wackadoodle Colors
+$color-blue-normal: #0685BE;
+$color-blue-darker: #0974A3;
+$color-yellow: #FCB117;
+
+$secondary-color: $color-seafoam;
+
+// typography
+$light: 300;
+$regular: 400;
+$bold: 500;
+
+// sizing
+$micro: 8px;
+$tiny: 18px;
+$small: 24px;
+$medium: 40px;
+$large: 64px;
+$xl: 104px;
+$xxl: 270px;
+
+// responsive breakpoints
+$mobile: 480px;
+$tabletMax: 768px;
+$tablet: 768px;
+
+// element sizes
+$header-height: 90px;
+$header-callout-height: 45px;
+$logo-size: $header-height - 46px;
+$logo-top-spacing: 23px;
+
+// spacing
+$wrapper-top-spacing: $header-height + $header-callout-height;

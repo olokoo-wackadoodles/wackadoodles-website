@@ -1,0 +1,119 @@
+.contact-form {
+	form {
+		.field {
+			margin: 0 0 2em;
+			box-sizing: border-box;
+			&.half {
+				width: 100%;
+				float: left;
+				@include respond-up('small') {
+					width: 50%;
+					padding: 0 0 0 1em;
+					&.first {
+						padding: 0 1em 0 0;
+					}
+				}
+			}
+		}
+
+		ul.actions {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				display: inline-block;
+                padding: 0 1em 0 0;
+                margin-bottom: 0;
+				vertical-align: middle;
+			}
+		}
+
+		input[type=email],
+		input[type=password],
+		input[type=search],
+		input[type=tel],
+		input[type=text],
+		input[type=url],
+		select,
+		textarea {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			background: $color-gray-1;
+			border: none;
+			border-radius: 0;
+			color: inherit;
+			display: block;
+			outline: 0;
+			padding: 0 1em;
+			text-decoration: none;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 16px;
+
+			&:focus {
+				border-color: $secondary-color;
+				box-shadow: 0 0 0 2px $secondary-color;
+			}
+		}
+
+		input[type=email],
+		input[type=password],
+		input[type=search],
+		input[type=tel],
+		input[type=text],
+		input[type=url] {
+			height: 50px;
+		}
+
+		textarea {
+			height: 250px;
+			padding: 1em;
+		}
+
+		label {
+			color: #000;
+			display: block;
+			font-size: .8em;
+			font-weight: 600;
+			letter-spacing: .25em;
+			margin: 0 0 1em;
+			text-transform: uppercase;
+		}
+
+		.button,
+		button,
+		input[type=button],
+		input[type=reset],
+		input[type=submit] {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			transition: background-color .2s ease-in-out,box-shadow .2s ease-in-out,color .2s ease-in-out;
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			box-shadow: inset 0 0 0 2px $color-black-1;
+			color: $color-black-1;
+			cursor: pointer;
+			display: inline-block;
+			font-size: .8em;
+			font-weight: 600;
+			height: 55px;
+			letter-spacing: .25em;
+			line-height: 55px;
+			padding: 0 1.75em;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+
+			&.primary {
+				background-color: $color-black-2;
+				color: $color-white;
+			}
+		}
+	}
+}

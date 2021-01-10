@@ -1,0 +1,71 @@
+.portfolio {
+    .project-card-container {
+        .project-card {
+			background-color: $color-gray-1;
+            min-height: 300px;
+            $project-card-offset: 70px - $column-padding;
+            &.position-0 {
+                margin-top: $project-card-offset;
+            }
+            &.position-3 {
+                margin-top: -$project-card-offset;
+            }
+
+			img {
+				position: absolute;
+				top: 50%;
+				right: 50%;
+				transform: translate(50%, -50%);
+				width: auto;
+				height: auto;
+				max-width: 60%;
+				max-height: 60%;
+				opacity: 0.5;
+
+				transition: all 300ms;
+
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(100%);
+			}
+
+			.image-container {
+				position: relative;
+				width: 100%;
+				height: 300px;
+				background-color: $color-gray-2;
+			}
+
+			.project-content {
+				padding: 40px 20px;
+				@include clear-fix;
+
+				.view-project-link {
+					float: right;
+					font-family: $font-heading;
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 32px;
+					@include underline-link(inactive, 4px);
+				}
+				.project-name {
+					float: left;
+                    margin: 0;
+                    font-family: $font-heading;
+				}
+			}
+
+			&:hover {
+				img {
+					opacity: 1;
+					-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+					filter: none;
+				}
+				.project-content {
+					.view-project-link {
+						@include underline-link(active, 4px);
+					}
+				}
+			}
+		}
+    }
+}

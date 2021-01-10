@@ -1,0 +1,119 @@
+.project-post {
+	section {
+		font-size: 21px;
+		line-height: 1.5em;
+		padding-left: 20%;
+		color: $color-black-2;
+	}
+
+	.made-with-container {
+		padding-left: 0;
+		.made-with-badge-container {
+			float: left;
+			width: 20%;
+			text-align: right;
+			padding: 15px 25px 0 0;
+			box-sizing: border-box;
+			.made-with-badge {
+				img {
+                    width: 75px;
+                    @include respond-down(medium) {
+                        width: 60px;
+                        margin-top: 2px;
+                    }
+                    @include respond-down(small) {
+                        width: 45px;
+                        margin-top: 17px;
+                    }
+				}
+			}
+		}
+
+		.made-with-disclaimer {
+			float: left;
+			width: 80%;
+			color: $color-black-5;
+			margin: 25px 0 50px;
+			p {
+                margin: 0;
+                font-weight: $regular;
+            }
+            .disclaimer-text {
+                font-size: 18px;
+                @include respond-down(medium) {
+                    font-size: 15px;
+                }
+                @include respond-down(small) {
+                    font-size: 13px;
+                }
+            }
+			.disclaimer-learn-more {
+				font-size: 15px;
+                margin-top: 0px;
+                @include respond-down(medium) {
+                    font-size: 13px;
+                }
+                @include respond-down(small) {
+                    font-size: 12px;
+                }
+			}
+		}
+	}
+
+	.header-image-container {
+		position: relative;
+		padding-left: 20%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+		h1 {
+			position: absolute;
+			top: 70px;
+			left: 0;
+			background-color: $color-white;
+			padding: 25px 25px 25px 0;
+            font-size: 65px;
+            font-family: $font-heading;
+
+            @include respond-down(medium) {
+                font-size: 50px;
+            }
+
+            @include respond-down(small) {
+                top: 15px;
+                padding: 15px 15px 15px 0;
+                font-size: 35px;
+            }
+		}
+
+		.visit-site-link {
+			position: absolute;
+			top: 210px;
+			left: 0;
+			font-size: 25px;
+			color: $color-black-0;
+            font-weight: 600;
+
+            background-color: $color-white;
+            padding: 7px 7px 7px 0;
+
+            @include respond-down(small) {
+                top: 80px;
+            }
+
+			&:before,
+			&:after {
+				height: 5px;
+				width: 30%;
+                opacity: 1;
+                bottom: 0;
+			}
+			&:hover {
+				@include underline-link(active);
+			}
+		}
+	}
+}

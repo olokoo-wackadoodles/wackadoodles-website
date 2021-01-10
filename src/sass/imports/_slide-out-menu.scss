@@ -1,0 +1,103 @@
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 30px;
+$hamburger-layer-spacing: 5px;
+
+$hamburger-layer-color: $color-white;
+$hamburger-active-layer-color: $color-black-0;
+$hamburger-hover-opacity: 1;
+
+.slide-out-menu-button {
+    position: absolute;
+    top: 32px;
+    left: 6%;
+    z-index: 9;
+
+    .hamburger-box {
+        vertical-align: middle;
+    }
+
+    .hamburger-label {
+        padding-left: 7px;
+        color: $color-white;
+        font-size: $tiny;
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &.is-active {
+        &.hamburger--arrow {
+            .hamburger-inner {
+                &:before {
+                    transform: translate3d(-6px, 2px, 0) rotate(-45deg) scale(0.7, 1);
+                }
+                &:after {
+                    transform: translate3d(-6px, -2px, 0) rotate(45deg) scale(0.7, 1);
+                }
+            }
+        }
+        .hamburger-label {
+            color: $color-black-0;
+        }
+    }
+}
+
+.slide-out-menu {
+    width: 30vw;
+    height: 100vh;
+    background-color: $color-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 8;
+    box-sizing: border-box;
+
+    padding: 100px 6vw;
+
+    &.hide {
+        transform: translate3d(-30vw, 0, 0);
+    }
+
+    &.show {
+        transform: translate3d(0vw, 0, 0);
+        overflow: hidden;
+    }
+
+    .nav-link {
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+
+        font-size: $small;
+        &:before {
+            display: block;
+            content: '';
+        }
+        &.active {
+            font-weight: $bold;
+        }
+    }
+}
+
+.slide-out-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
+
+    background-color: rgba(0,0,0,0.5);
+
+    &.show {
+        display: block;
+    }
+
+    &.hide {
+        display: none;
+    }
+}

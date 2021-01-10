@@ -1,0 +1,79 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+
+    background-color: $color-blue-normal;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    height: $header-height;
+
+    .logo-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+
+        .logo {
+            display: inline-block;
+            padding-top: $logo-top-spacing;
+            img {
+                height: $logo-size;
+            }
+        }
+    }
+
+    // nav {
+    //     float: right;
+    // }
+
+    // .nav-link {
+    //     position: relative;
+    //     display: inline-block;
+    //     justify-content: center;
+    //     font-weight: $bold;
+    //     line-height: $header-height;
+    //     text-align: center;
+    //     text-transform: lowercase;
+    //     margin: 0 15px;
+    //     @include respond-down(small) {
+    //         margin: 0 7px;
+    //     }
+    //     &:first-child {
+    //         margin-left: 0;
+    //     }
+    //     &:last-child {
+    //         margin-right: 0;
+    //     }
+
+    //     &.active:after {
+    //         content: ' ';
+    //         height: 4px;
+    //         width: 100%;
+    //         background: $color-seafoam;
+    //         border: none;
+    //         position: absolute;
+    //         left: 0;
+    //         bottom: 15px;
+    //     }
+    // }
+}
+
+.header-callout {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    height: $header-callout-height;
+    width: 100%;
+    text-align: center;
+    background-color: $color-blue-darker;
+    color: $color-white;
+    z-index: 8;
+
+    .callout-message {
+        line-height: $header-callout-height;
+    }
+}
