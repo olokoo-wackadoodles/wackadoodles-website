@@ -6,7 +6,7 @@ excerpt: >-
   you can brew barista level coffee.
 date: '2020-12-28'
 thumb_img_path: images/blog-perfect-pour-over.jpg
-template: post
+template: diary
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci diam, elementum consectetur elit non, tempus varius leo. In ut bibendum mauris. Vestibulum mattis pharetra enim. Maecenas ornare vulputate nisi sed condimentum. Fusce sit amet cursus nunc. Vivamus malesuada posuere mollis. Aliquam facilisis neque eget ligula aliquam consequat.

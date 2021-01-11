@@ -1,5 +1,7 @@
 .home-hero {
+	position: relative;
 	background-color: $color-yellow;
+	overflow-y: hidden;
 	padding: 50px 0;
 
 	@include respond-up(small) {
@@ -54,6 +56,34 @@
 			left: $cover-image-outset-offset;
 			background-color: $color-blue-normal;
 			z-index: 1;
+		}
+	}
+
+	.left-squiggle,
+	.right-squiggle {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		box-sizing: border-box;
+		padding: 90px 0;
+
+		.squiggle-image {
+			height: 100%;
+		}
+	}
+
+	.left-squiggle {
+		left: -30px;
+		.squiggle-image {
+			transform: rotate(2deg);
+		}
+	}
+
+	.right-squiggle {
+		right: -130px;
+		padding: 30px 0 150px 0;
+		.squiggle-image {
+			transform: rotate(155deg);
 		}
 	}
 }

@@ -11,39 +11,30 @@ export default class Footer extends React.Component {
                     <div className="row">
                         <div className="col-100">
                             <div className="section-heading text-align-center">
-                                <h2>I'm an entrepreneur, engineer, and stuff.</h2>
+                                <div className="footer-logo">
+                                    <Link to={withPrefix('/')} className="logo">
+                                        <img id="footerLogo" src={_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null)} loading="eager" />
+                                    </Link>
+                                </div>
                                 <div className="eyebrow"></div>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-100 col-small-1-3">
-                            <div className="footer-logo-container">
-                                <img src="/images/ir-icon-white.svg" width="50%"/>
+                        <div className="col-100 text-align-center">
+                            {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
+                            <div className="social-links">
+                                {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (link, link_idx) => (
+                                link && (
+                                <Link key={link_idx} className="social-link" to={withPrefix(_.get(link, 'url', null))}{...(_.get(link, 'new_window', null) ? ({target: '_blank', rel: 'noopener'}) : null)}><img src={_.get(link, 'icon_path', null)} className="social-icon" title={_.get(link, 'label', null)} /></Link>
+                                )
+                                ))}
                             </div>
-                        </div>
-                        <div className="col-100 col-small-2-3">
-                            <h3>More about me</h3>
-                            <div className="about-me">
-                                {markdownify(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}
-                            </div>
-                            <div className="about-me-signature">
-                                <div className="signature-image-container">
-                                    <img src="/images/ianrugg-signature-profile.jpg" className="signature-image" />
-                                </div>
-                                <div className="signature-text-container">
-                                    <h3 className="signature-text-name">Ian Rugg</h3>
-                                    <div className="signature-text-commerce-cloud">Commerce Cloud</div>
-                                    <div className="signature-text-salesforce-certified">Salesforce Certified</div>
-                                </div>
-                                <a href="https://trailblazer.me/id/ianrugg" target="_new" className="certification-badge-link">
-                                    <img className="certification-badge" src="/images/SF_B2C_Developer_Certification.png" alt="Certified Commerce Cloud Digital Developer." />
-                                </a>
-                            </div>
+                            )}
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-100">
+                        <div className="col-100 text-align-center">
                             <div className="olokoo-credit">
                                 <div className="made-with">Made with</div>
                                 <svg className="heart" viewBox="0 0 32 29.6">

@@ -17,7 +17,7 @@ button,
         border: none;
     }
 
-    &:not(.logo):not(.nav-link):not(.underline-link):not(.certification-badge-link):not(.hamburger) {
+    &:not(.logo):not(.nav-link):not(.underline-link):not(.hamburger):not(.social-link) {
         font-weight: inherit;
         position: relative;
 
@@ -30,7 +30,7 @@ button,
         &:after {
             content: '';
             position: absolute;
-            background: $color-seafoam;
+            background: $color-blue-normal;
             height: 4px;
             width: 100%;
             bottom: 0;

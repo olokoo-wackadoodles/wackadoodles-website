@@ -4,21 +4,18 @@ import moment from 'moment-strftime';
 
 import {getPages, Link, withPrefix} from '../utils';
 
-export default class SectionPosts extends React.Component {
+export default class SectionDiaryEntries extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
         let display_posts = getPages(this.props.pageContext.pages, '/posts');
         return (
             <section id={_.get(section, 'section_id', null)} className="posts">
-                <div className="container">
+                <div className="container py-5">
                     {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
                         <div className="row">
                             <div className="col-100">
                                 <div className="section-heading">
-                                    <div className="eyebrow"></div>
-                                    <div className="section-heading-text">
-                                        {_.get(section, 'section_heading_text', null)}
-                                    </div>
+                                    <h2>{_.get(section, 'section_heading_text', null)}</h2>
                                 </div>
                             </div>
                         </div>

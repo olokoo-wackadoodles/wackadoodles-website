@@ -1,11 +1,12 @@
 ---
-title: Sed feugiat et mauris adipiscing dolor
+title: Tellus magna dolore sed elementum
 excerpt: >-
   Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum
-  blandit dolor elementum viverra.
-date: '2016-08-28'
+  blandit dolor elementum viverra. Sed quat a diam, aliquet tempus felis.
+  Phasellus et magna vitae nibh porttitor tempus vitae.
+date: '2016-08-22'
 thumb_img_path: images/art.svg
-template: post
+template: diary
 ---
 
 Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.

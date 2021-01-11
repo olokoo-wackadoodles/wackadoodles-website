@@ -10,46 +10,50 @@
                 "url": "/"
             },
             {
-                "label": "Portfolio",
-                "url": "/portfolio/"
+                "label": "The kids' diary",
+                "url": "/diary/"
             },
             {
-                "label": "Blog",
-                "url": "/blog/"
+                "label": "Shop with us",
+                "url": "/shop/"
             },
             {
                 "label": "Contact",
                 "url": "/contact/"
             }
+        ],
+        "secondary_nav_links": [
+            {
+                "label": "Shop with us",
+                "url": "/shop/"
+            }
         ]
     },
     "footer": {
-        "content": "Yeah yeah yeah, I build websites. But I actually do other things too. I love coffee, all things finance, technlogy, drones, and cars! I live just outside Boulder where I am in the proccess of opening a brand-new coffee shop with my friends.\n\nWith the addition of this new website, I will continue to add new content surrounding all the different projects I work on. Oh yeah, I also work for the best company in the world, [Red Van Workshop](https://redvanworkshop.com?ref=ianrugg.com), so you will see projects that I worked on there too!",
         "has_social": true,
         "social_links": [
             {
-                "label": "Twitter",
-                "url": "https://twitter.com/",
+                "label": "Facebook",
+                "url": "https://facebook.com/",
+                "icon_path": "/images/icon-facebook.svg",
                 "new_window": true
             },
             {
                 "label": "Instagram",
                 "url": "https://www.instagram.com/",
+                "icon_path": "/images/icon-instagram.svg",
                 "new_window": true
             },
             {
-                "label": "GitHub",
-                "url": "https://github.com/",
+                "label": "Twitter",
+                "url": "https://www.instagram.com/",
+                "icon_path": "/images/icon-twitter.svg",
                 "new_window": true
             },
             {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/",
-                "new_window": true
-            },
-            {
-                "label": "DEV",
-                "url": "https://dev.to/",
+                "label": "Amazon",
+                "url": "https://www.amazon.com/",
+                "icon_path": "/images/icon-amazon.svg",
                 "new_window": true
             }
         ]

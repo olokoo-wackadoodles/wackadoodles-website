@@ -71,7 +71,7 @@ $breakpoints: (
 	}
 }
 
-@mixin underline-link($state: inactive, $underlineHeight: 2px, $bottomPosition: -5px, $color: $color-seafoam) {
+@mixin underline-link($state: inactive, $underlineHeight: 2px, $bottomPosition: -5px, $color: $color-blue-normal) {
 	@if ($state == inactive) {
 		text-decoration: none;
 		color: inherit;

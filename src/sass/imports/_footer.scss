@@ -1,8 +1,7 @@
 .footer {
-    margin-top: 50px;
     font-size: 12px;
     color: $color-white;
-    background-color: $color-black-0;
+    background-color: $color-blue-darker;
     padding: 70px 0;
 
     h3 {
@@ -25,54 +24,18 @@
         color: $color-white;
         z-index: 1;
     }
-    .about-me-signature {
-        position: relative;
-        margin-top: 45px;
-        .signature-image-container {
-            display: inline-block;
-            vertical-align: middle;
-            width: 75px;
-            height: 75px;
-            border-radius: 75px;
-            margin-right: 20px;
-
-            .signature-image {
-                width: 100%;
-                border-radius: 75px;
-            }
+    .social-link {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 20px;
+        &:first-child {
+            margin-left: 0;
         }
-        .signature-text-container {
-            display: inline-block;
-            vertical-align: middle;
-            padding-bottom: 10px;
-            .signature-text-name {
-                margin: 0;
-                letter-spacing: 3px;
-            }
-            .signature-text-commerce-cloud {
-                text-transform: uppercase;
-                font-weight: $light;
-                letter-spacing: 4px;
-                margin: 9px 0 6px 0;
-            }
-            .signature-text-salesforce-certified {
-                text-transform: uppercase;
-                letter-spacing: 3px;
-            }
+        &:last-child {
+            margin-right: 0;
         }
-        .certification-badge-link {
-            display: block;
-            margin-top: 40px;
-
-            @include respond-up(small) {
-                position: absolute;
-                bottom: 10px;
-                right: 0;
-                margin-top: 0;
-            }
-        }
-        .certification-badge {
-            width: 95px;
+        .social-icon {
+            height: 42px;
         }
     }
 }

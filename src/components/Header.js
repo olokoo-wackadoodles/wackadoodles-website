@@ -12,15 +12,15 @@ export default class Header extends React.Component {
                     {(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null) && _.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null)) && (
                         <HamburgerMenu { ...this.props } />
                     )}
-                    <div className="container">
-                        <div className="logo-container">
-                            <Link to={withPrefix('/')} className="logo">
-                                <img id="headerLogo" src={_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null)} loading="eager" />
-                            </Link>
-                        </div>
-                        {/* {(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null) && _.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null)) && (
+                    <div className="logo-container">
+                        <Link to={withPrefix('/')} className="logo">
+                            <img id="headerLogo" src={_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null)} loading="eager" />
+                        </Link>
+                    </div>
+                    {( _.get(this.props, 'pageContext.site.siteMetadata.header.secondary_nav_links', null) ) && (
+                    <div className="secondary-navigation">
                         <nav>
-                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null), (item, item_idx) => {
+                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.secondary_nav_links', null), (item, item_idx) => {
                                 let pageUrl = _.trim(_.get(this.props, 'pageContext.url', null), '/');
                                 let itemUrl = _.trim(_.get(item, 'url', null), '/');
                                 return (
@@ -28,8 +28,8 @@ export default class Header extends React.Component {
                                 )
                             })}
                         </nav>
-                        )} */}
                     </div>
+                    )}
                 </header>
                 <div className="header-callout">
                     <span className="callout-message">

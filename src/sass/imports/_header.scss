@@ -26,40 +26,25 @@
         }
     }
 
-    // nav {
-    //     float: right;
-    // }
+    .secondary-navigation {
+        position: absolute;
+        top: 0;
+        right: $mobile-gutter;
+        z-index: 2;
 
-    // .nav-link {
-    //     position: relative;
-    //     display: inline-block;
-    //     justify-content: center;
-    //     font-weight: $bold;
-    //     line-height: $header-height;
-    //     text-align: center;
-    //     text-transform: lowercase;
-    //     margin: 0 15px;
-    //     @include respond-down(small) {
-    //         margin: 0 7px;
-    //     }
-    //     &:first-child {
-    //         margin-left: 0;
-    //     }
-    //     &:last-child {
-    //         margin-right: 0;
-    //     }
+        .nav-link {
+            height: $header-height;
+            line-height: $header-height;
 
-    //     &.active:after {
-    //         content: ' ';
-    //         height: 4px;
-    //         width: 100%;
-    //         background: $color-seafoam;
-    //         border: none;
-    //         position: absolute;
-    //         left: 0;
-    //         bottom: 15px;
-    //     }
-    // }
+            @include underline-link($state: inactive, $color: $color-yellow);
+
+            &:hover {
+                @include underline-link($state: active, $color: $color-yellow);
+            }
+
+            color: $color-white;
+        }
+    }
 }
 
 .header-callout {

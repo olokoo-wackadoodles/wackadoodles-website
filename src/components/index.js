@@ -4,7 +4,7 @@ import SectionContent from './SectionContent';
 import SectionHero from './SectionHero';
 import SectionHomeHero from './SectionHomeHero';
 import SectionPortfolio from './SectionPortfolio';
-import SectionPosts from './SectionPosts';
+import SectionDiaryEntries from './SectionDiaryEntries';
 import SectionContactForm from './SectionContactForm';
 import Layout from './Layout';
 
@@ -15,7 +15,7 @@ export {
     SectionHero,
     SectionHomeHero,
     SectionPortfolio,
-    SectionPosts,
+    SectionDiaryEntries,
     SectionContactForm,
     Layout
 };
@@ -27,7 +27,7 @@ export default {
     SectionHero,
     SectionHomeHero,
     SectionPortfolio,
-    SectionPosts,
+    SectionDiaryEntries,
     SectionContactForm,
     Layout
 };

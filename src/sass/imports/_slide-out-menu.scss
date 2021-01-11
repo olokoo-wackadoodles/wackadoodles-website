@@ -10,7 +10,7 @@ $hamburger-hover-opacity: 1;
 .slide-out-menu-button {
     position: absolute;
     top: 32px;
-    left: 6%;
+    left: $mobile-gutter;
     z-index: 9;
 
     .hamburger-box {
@@ -69,8 +69,8 @@ $hamburger-hover-opacity: 1;
 
     .nav-link {
         position: relative;
-        height: 50px;
-        line-height: 50px;
+        height: 55px;
+        line-height: 55px;
 
         font-size: $small;
         &:before {
