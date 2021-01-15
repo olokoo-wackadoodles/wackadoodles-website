@@ -1,8 +1,9 @@
 ---
 title: Family is important
 excerpt: >-
-  Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum
-  blandit dolor elementum viverra.
+  Halvah apple pie danish. Gingerbread topping brownie biscuit sweet roll candy
+  dragée tiramisu. Toffee bonbon lemon drops chocolate cake gingerbread. Gummi
+  bears cake chupa chups. Tiramisu icing pie.
 date: '2016-08-28'
 thumb_img_path: images/art.svg
 template: diary
