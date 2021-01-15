@@ -7,7 +7,7 @@ export default class SectionContactForm extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
         return (
-            <div className="contact-form container">
+            <div className="contact-form container py-5">
                 <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />

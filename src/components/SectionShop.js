@@ -4,10 +4,10 @@ import moment from 'moment-strftime';
 
 import {getPages, Link, withPrefix} from '../utils';
 
-export default class SectionDiaryEntries extends React.Component {
+export default class SectionShop extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
-        let display_posts = getPages(this.props.pageContext.pages, '/entries');
+        let display_posts = getPages(this.props.pageContext.pages, '/shop');
         let entries_to_show = _.get(section, 'entries_to_show', null) || 5;
         return (
             <section id={_.get(section, 'section_id', null)} className="posts">
@@ -21,19 +21,18 @@ export default class SectionDiaryEntries extends React.Component {
                     )}
                     <div className="row">
                         {_.map(_.orderBy(_.take(display_posts, entries_to_show), 'frontmatter.date', 'desc'), (post, post_idx) => (
-                            <div className="col-1-2">
-                                <div className="diary-entry">
-                                    <h2>Dear Diary,</h2>
-                                    <h4 className="publish-date">{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</h4>
-                                    {_.get(post, 'frontmatter.excerpt', null) && (
-                                    <p className="summary">{_.get(post, 'frontmatter.excerpt', null)}</p>
-                                    )}
-                                    {((_.get(section, 'has_more_link', null) === true) && _.get(section, 'more_link_text', null)) && (
-                                        <Link key={post_idx} to={withPrefix(_.get(post, 'url', null))} className="text-link">
-                                            {_.get(section, 'more_link_text', null)}
-                                        </Link>
-                                    )}
-                                </div>
+                            <div className="col-1-2 col-small-1-3">
+                                <Link key={post_idx} to={withPrefix(_.get(post, 'url', null))}>
+                                    <div className="product-tile">
+                                        {_.get(post, 'frontmatter.main_image', null) && (<img className="product-image" src={withPrefix(_.get(post, 'frontmatter.main_image', null))} alt={_.get(post, 'frontmatter.title', null)}/>)}
+                                        {_.get(post, 'frontmatter.title', null) && (
+                                        <div className="title">{_.get(post, 'frontmatter.title', null)}</div>
+                                        )}
+                                        {_.get(post, 'frontmatter.price', null) && (
+                                        <div className="price">{_.get(post, 'frontmatter.price', null)}</div>
+                                        )}
+                                    </div>
+                                </Link>
                             </div>
                         ))}
                     </div>

@@ -6,6 +6,6 @@ exports.components = {
   "component---src-templates-advanced-js": () => import("./../../../src/templates/advanced.js" /* webpackChunkName: "component---src-templates-advanced-js" */),
   "component---src-templates-diary-js": () => import("./../../../src/templates/diary.js" /* webpackChunkName: "component---src-templates-diary-js" */),
   "component---src-templates-page-js": () => import("./../../../src/templates/page.js" /* webpackChunkName: "component---src-templates-page-js" */),
-  "component---src-templates-project-js": () => import("./../../../src/templates/project.js" /* webpackChunkName: "component---src-templates-project-js" */)
+  "component---src-templates-shop-js": () => import("./../../../src/templates/shop.js" /* webpackChunkName: "component---src-templates-shop-js" */)
 }
 

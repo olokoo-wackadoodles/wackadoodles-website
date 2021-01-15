@@ -6,6 +6,8 @@ import SectionHomeHero from './SectionHomeHero';
 import SectionPortfolio from './SectionPortfolio';
 import SectionDiaryEntries from './SectionDiaryEntries';
 import SectionContactForm from './SectionContactForm';
+import SectionInstagramFeed from './SectionInstagramFeed';
+import SectionShop from './SectionShop';
 import Layout from './Layout';
 
 export {
@@ -17,6 +19,8 @@ export {
     SectionPortfolio,
     SectionDiaryEntries,
     SectionContactForm,
+    SectionInstagramFeed,
+    SectionShop,
     Layout
 };
 
@@ -29,5 +33,7 @@ export default {
     SectionPortfolio,
     SectionDiaryEntries,
     SectionContactForm,
+    SectionInstagramFeed,
+    SectionShop,
     Layout
 };

@@ -9,6 +9,6 @@ exports.components = {
   "component---src-templates-advanced-js": hot(preferDefault(require("/Users/olokoo/Development/Olokoo/clients/we-are-the-wackadoodles/src/templates/advanced.js"))),
   "component---src-templates-diary-js": hot(preferDefault(require("/Users/olokoo/Development/Olokoo/clients/we-are-the-wackadoodles/src/templates/diary.js"))),
   "component---src-templates-page-js": hot(preferDefault(require("/Users/olokoo/Development/Olokoo/clients/we-are-the-wackadoodles/src/templates/page.js"))),
-  "component---src-templates-project-js": hot(preferDefault(require("/Users/olokoo/Development/Olokoo/clients/we-are-the-wackadoodles/src/templates/project.js")))
+  "component---src-templates-shop-js": hot(preferDefault(require("/Users/olokoo/Development/Olokoo/clients/we-are-the-wackadoodles/src/templates/shop.js")))
 }
 

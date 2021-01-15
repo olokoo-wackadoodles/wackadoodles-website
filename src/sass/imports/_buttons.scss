@@ -17,9 +17,10 @@ button,
         border: none;
     }
 
-    &:not(.logo):not(.nav-link):not(.underline-link):not(.hamburger):not(.social-link) {
+    &:not(.logo):not(.nav-link):not(.underline-link):not(.hamburger):not(.social-link):not(.instagram-feed-link) {
         font-weight: inherit;
         position: relative;
+        z-index: 1;
 
         &.passive {
             &:after {opacity: 0;}

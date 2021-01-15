@@ -21,21 +21,20 @@ export default class Post extends React.Component {
         return (
             <Layout {...this.props}>
             <section className="post">
-                <div className="container">
-                    {_.get(this.props, 'pageContext.frontmatter.content_img_path', null) && (
-                    <img className="header-image" src={withPrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path', null))} alt=""/>
-                    )}
-                    <header className="hero">
-                        <div className="copy">
-                            <h1>{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                            <h3>{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</h3>
-                            )}
-                            <h3 className="publish-date">{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%A, %B %e, %Y')}</h3>
+                <div className="container py-5">
+                    <div className="diary-entry">
+                        <header className="hero">
+                            <div className="copy">
+                                <h1>{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                                {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                                <h3>{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</h3>
+                                )}
+                                <h3 className="publish-date">{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%A, %B %e, %Y')}</h3>
+                            </div>
+                        </header>
+                        <div className="content">
+                            {htmlToReact(_.get(this.props, 'pageContext.html', null))}
                         </div>
-                    </header>
-                    <div className="content">
-                        {htmlToReact(_.get(this.props, 'pageContext.html', null))}
                     </div>
                 </div>
             </section>

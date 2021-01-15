@@ -1,0 +1,24 @@
+.diary-entry {
+    padding: 60px 40px;
+    background-color: $color-white;
+
+    .publish-date {
+        color: $color-black-5;
+    }
+
+    .summary {
+        margin: 20px 0 20px 0;
+        font-size: $tiny;
+        line-height: 1.6;
+    }
+
+    .text-link {
+        display: inline-block;
+        font-weight: $light;
+        font-size: 18px;
+    }
+
+    .hero {
+        margin-bottom: 30px;
+    }
+}
