@@ -184,23 +184,41 @@ models:
           type: model
           models:
             - action
+      - type: list
+        name: secondary_nav_links
+        label: Right Side Header Links
+        description: List of navigation links on right side of nav bar
+        items:
+          type: model
+          models:
+            - action
+
   footer:
     type: object
     label: Footer Configuration
     labelField: content
     fields:
-      - type: markdown
-        name: content
-        label: Footer Content
-        description: The about me content section
+      - type: boolean
+        name: has_social
+        label: Has Social Icons
+        description: Whether to display social icons
       - type: list
-        name: links
-        label: Links
-        description: List of links in the footer
+        name: social_links
+        label: Social Links
+        description: List of social links in the footer
         items:
-          type: model
-          models:
-            - action
+          - type: string
+            label: Text
+            name: label
+          - type: string
+            label: Link
+            name: url
+          - type: image
+            label: Icon Image
+            name: icon_path
+          - type: boolean
+            label: New Window?
+            name: new_window
   author:
     type: data
     file: author.json
@@ -248,6 +266,9 @@ models:
             - section_posts
             - section_portfolio
             - section_contact_form
+            - section_shop
+            - section_diary_entries
+            - section_instagram_feed
   page:
     type: page
     label: Page
@@ -301,38 +322,6 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the post displayed in the blog feed and in meta data
-      - type: date
-        name: date
-        label: Date
-        required: true
-  project:
-    type: page
-    urlPath: '/portfolio/{slug}'
-    label: Portfolio
-    folder: portfolio
-    layout: project
-    fields:
-      - type: string
-        name: title
-        label: Title
-        description: The title of the project
-        required: true
-      - type: string
-        name: subtitle
-        label: Subtitle
-        description: The text displayed just below the title
-      - type: image
-        name: content_img_path
-        label: Image
-        description: The image displayed in the single project
-      - type: image
-        name: thumb_img_path
-        label: Alternate Image
-        description: The image displayed in any thumbnails for the project
-      - type: string
-        name: excerpt
-        label: Excerpt
-        description: The excerpt of the project displayed in the blog feed and in meta data
       - type: date
         name: date
         label: Date
