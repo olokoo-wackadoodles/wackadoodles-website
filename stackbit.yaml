@@ -8,6 +8,14 @@ uploadDir: images
 dataDir: src/data
 pagesDir: src/pages
 pageLayoutKey: template
+pageData:
+  - pagePath: /
+    initialExpandedPaths:
+      - '[0]'
+      - '[0].fields.sections'
+      - '[0].fields.sections.items[0]'
+      - '[0].fields.sections.items[0].fields.title'
+      - '[0].fields.sections.items[0].fields.subtitle'
 models:
   config:
     type: config
@@ -125,3 +133,64 @@ models:
             - section_shop
             - section_diary_entries
             - section_instagram_feed
+  action:
+    type: object
+    label: Action
+    labelField: label
+    fields:
+      - type: string
+        name: label
+        label: Label
+        required: true
+      - type: string
+        name: url
+        label: URL
+        required: true
+        widget: url
+      - type: boolean
+        name: new_window
+        label: Open in new tab/window
+        default: false
+  section:
+    type: object
+    label: Section
+    labelField: title
+    fields:
+      - type: string
+        name: title
+        label: Section Title
+        description: >-
+          The section title (Used by the CMS, even if it is not displayed in the
+          section)
+      - type: string
+        name: section_id
+        label: Element ID
+        description: >-
+          A unique identifier that can be used when linking to this section.
+          Must not contain whitespace.
+
+  section_home_hero:
+    type: object
+    label: Home Hero Section
+    extends:
+      - section
+  section_contact_form:
+    type: object
+    label: Contact Section
+    extends:
+      - section
+  section_shop:
+    type: object
+    label: Shop Section
+    extends:
+      - section
+  section_diary_entries:
+    type: object
+    label: Diary Section
+    extends:
+      - section
+  section_instagram_feed:
+    type: object
+    label: Instagram Section
+    extends:
+      - section
