@@ -78,7 +78,6 @@ models:
   footer:
     type: object
     label: Footer Configuration
-    labelField: content
     fields:
       - type: boolean
         name: has_social
