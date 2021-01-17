@@ -2,15 +2,16 @@
 title: Home
 sections:
   - section_id: lorem-ipsum
-    title: >-
+    title: |-
       ## Welcome to our
-
       # Blended family!
     content: >-
-      Children experience frustration and discontent too, and it’s not always easy to remember our manners! Through questions, answers, and examples we look at ways for children to navigate those tricky feelings and communicate effectively.
+      Children experience frustration and discontent too, and it’s not always
+      easy to remember our manners! Through questions, answers, and examples we
+      look at ways for children to navigate those tricky feelings and
+      communicate effectively.
     cover_image_path: images/wackadoodles-welcome-to-our-family-cover.jpg
     type: section_home_hero
-
   - title: Recent Diary Entries
     section_id: recent-diary-entries
     has_more_link: true
@@ -19,7 +20,6 @@ sections:
     section_heading_text: Recent Diary Entries
     entries_to_show: 2
     type: section_diary_entries
-
   - title: Instagram Feed
     section_id: recent-insta-feed
     show_section_heading: true
@@ -27,7 +27,27 @@ sections:
     instagram_user_id: 43238245701
     posts_to_show: 6
     type: section_instagram_feed
+  - section_id: lorem-ipsum
+    title: >-
+      ## Lorem ipsum
 
+
+      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+      - Lorem ipsum
+
+      - dolor sit amet
+    content: lorem-ipsum
+    type: lorem-ipsum
+    has_more_link: false
+    more_link_text: lorem-ipsum
+    show_section_heading: false
+    section_heading_text: lorem-ipsum
+    entries_to_show: 0
+    instagram_user_id: 0
+    posts_to_show: 0
 template: advanced
 wrapper_classes: home-page
 ---
