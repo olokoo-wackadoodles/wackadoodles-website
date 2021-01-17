@@ -93,3 +93,35 @@ models:
           - type: boolean
             label: New Window?
             name: new_window
+  advanced:
+    type: page
+    label: Advanced Page
+    hideContent: true
+    layout: advanced
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page
+        required: true
+      - type: string
+        name: excerpt
+        label: Excerpt
+        description: The excerpt of the page displayed in meta data
+      - type: string
+        name: wrapper_classes
+        label: Wrapper Classes
+        description: Class string added to wrapper div
+      - type: list
+        name: sections
+        label: Sections
+        description: Page sections
+        items:
+          type: model
+          labelField: title
+          models:
+            - section_home_hero
+            - section_contact_form
+            - section_shop
+            - section_diary_entries
+            - section_instagram_feed
