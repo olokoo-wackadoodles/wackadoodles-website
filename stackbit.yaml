@@ -101,6 +101,7 @@ models:
           - type: boolean
             label: New Window?
             name: new_window
+
   advanced:
     type: page
     label: Advanced Page
@@ -133,6 +134,53 @@ models:
             - section_shop
             - section_diary_entries
             - section_instagram_feed
+
+  page:
+    type: page
+    label: Page
+    layout: page
+    exclude:
+      - entries/**
+      - shop/**
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The text displayed just below the title
+      - type: string
+        name: excerpt
+        label: Excerpt
+        description: The excerpt of the page displayed in meta data
+      - type: string
+        name: wrapper_classes
+        label: Wrapper Classes
+        description: Class string added to wrapper div
+  diary:
+    type: page
+    urlPath: '/entries/{slug}'
+    label: Diary
+    folder: entries
+    layout: diary
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the post
+        required: true
+      - type: string
+        name: excerpt
+        label: Excerpt
+        description: The excerpt of the post displayed in the blog feed and in meta data
+      - type: date
+        name: date
+        label: Date
+        required: true
+
   action:
     type: object
     label: Action
