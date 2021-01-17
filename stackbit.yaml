@@ -1,0 +1,95 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+ssgVersion: 2.3.30
+buildCommand: npm run build
+publishDir: public
+staticDir: static
+uploadDir: images
+dataDir: src/data
+pagesDir: src/pages
+pageLayoutKey: template
+models:
+  config:
+    type: config
+    label: Site Configuration
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: Site title
+        required: true
+      - type: string
+        name: description
+        label: Site Description
+        description: The default site description used in meta data
+      - type: model
+        name: header
+        label: Header Configuration
+        models:
+          - header
+      - type: model
+        name: footer
+        label: Footer Configuration
+        models:
+          - footer
+  header:
+    type: object
+    label: Header Configuration
+    labelField: title
+    fields:
+      - type: string
+        name: title
+        label: Header Title
+        description: The title used for logo title and alt
+      - type: image
+        name: logo
+        label: Header Logo
+        description: The image used for logo
+        required: true
+      - type: boolean
+        name: has_nav
+        label: Enable Navigation Menu
+        description: Display the navigation bar in the header
+        default: true
+      - type: list
+        name: nav_links
+        label: Navigation Links
+        description: List of navigation links
+        items:
+          type: model
+          models:
+            - action
+      - type: list
+        name: secondary_nav_links
+        label: Right Side Header Links
+        description: List of navigation links on right side of nav bar
+        items:
+          type: model
+          models:
+            - action
+  footer:
+    type: object
+    label: Footer Configuration
+    labelField: content
+    fields:
+      - type: boolean
+        name: has_social
+        label: Has Social Icons
+        description: Whether to display social icons
+      - type: list
+        name: social_links
+        label: Social Links
+        description: List of social links in the footer
+        items:
+          - type: string
+            label: Text
+            name: label
+          - type: string
+            label: Link
+            name: url
+          - type: image
+            label: Icon Image
+            name: icon_path
+          - type: boolean
+            label: New Window?
+            name: new_window
