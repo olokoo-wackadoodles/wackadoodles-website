@@ -88,18 +88,9 @@ models:
         label: Social Links
         description: List of social links in the footer
         items:
-          - type: string
-            label: Text
-            name: label
-          - type: string
-            label: Link
-            name: url
-          - type: image
-            label: Icon Image
-            name: icon_path
-          - type: boolean
-            label: New Window?
-            name: new_window
+          type: model
+          models:
+            - social_icon
 
   advanced:
     type: page
@@ -198,6 +189,25 @@ models:
         name: new_window
         label: Open in new tab/window
         default: false
+
+  social_icon:
+    type: object
+    label: Social Icon
+    labelField: label
+    fields:
+      - type: string
+        label: Text
+        name: label
+      - type: string
+        label: URL
+        name: url
+      - type: image
+        label: Icon Image
+        name: icon_path
+      - type: boolean
+        label: Open in new tab/window
+        name: new_window
+
   section:
     type: object
     label: Section
