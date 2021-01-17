@@ -27,27 +27,6 @@ sections:
     instagram_user_id: 43238245701
     posts_to_show: 6
     type: section_instagram_feed
-  - section_id: lorem-ipsum
-    title: >-
-      ## Lorem ipsum
-
-
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
-    content: lorem-ipsum
-    type: lorem-ipsum
-    has_more_link: false
-    more_link_text: lorem-ipsum
-    show_section_heading: false
-    section_heading_text: lorem-ipsum
-    entries_to_show: 0
-    instagram_user_id: 0
-    posts_to_show: 0
 template: advanced
 wrapper_classes: home-page
 ---
