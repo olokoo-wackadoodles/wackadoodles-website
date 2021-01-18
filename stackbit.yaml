@@ -92,6 +92,21 @@ models:
           models:
             - social_icon
 
+  author:
+    type: data
+    file: author.json
+    label: Author
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: email
+        label: Email
+      - type: image
+        name: avatar
+        label: Avatar
+
   advanced:
     type: page
     label: Advanced Page
@@ -166,6 +181,31 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the post displayed in the blog feed and in meta data
+      - type: date
+        name: date
+        label: Date
+        required: true
+  shop:
+    type: page
+    urlPath: '/shop/{slug}'
+    label: Shop
+    folder: shop
+    layout: shop
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the product
+        required: true
+      - type: string
+        name: short_description
+        label: Short Description
+        description: The short description of the product displayed in meta data
+      - type: string
+        name: shop_link
+        label: Shop Link
+        description: Link to square shop page for this product
+        required: true
       - type: date
         name: date
         label: Date
