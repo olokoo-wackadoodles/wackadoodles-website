@@ -255,6 +255,11 @@ models:
         description: >-
           A unique identifier that can be used when linking to this section.
           Must not contain whitespace.
+      - type: boolean
+        name: show_section_heading
+        label: Show Section Heading
+        required: false
+        default: true
 
   section_home_hero:
     type: object
@@ -306,3 +311,13 @@ models:
     label: Instagram Section
     extends:
       - section
+    fields:
+      - type: string
+        name: section_heading_text
+        label: Section Heading Text
+      - type: number
+        name: posts_to_show
+        label: Posts To Show
+      - type: string
+        name: instagram_user_id
+        label: Instagram User ID
