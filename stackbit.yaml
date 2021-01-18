@@ -288,6 +288,19 @@ models:
     label: Diary Section
     extends:
       - section
+    fields:
+      - type: boolean
+        name: has_more_link
+        label: Display Link
+      - type: string
+        name: more_link_text
+        label: Link Text
+      - type: string
+        name: section_heading_text
+        label: Section Heading Text
+      - type: number
+        name: entries_to_show
+        label: Entries To Show
   section_instagram_feed:
     type: object
     label: Instagram Section
