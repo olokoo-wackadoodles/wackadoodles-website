@@ -28,5 +28,4 @@ sections:
     posts_to_show: 6
     type: section_instagram_feed
 template: advanced
-wrapper_classes: home-page
 ---
