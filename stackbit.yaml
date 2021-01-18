@@ -8,14 +8,7 @@ uploadDir: images
 dataDir: src/data
 pagesDir: src/pages
 pageLayoutKey: template
-pageData:
-  - pagePath: /
-    initialExpandedPaths:
-      - '[0]'
-      - '[0].fields.sections'
-      - '[0].fields.sections.items[0]'
-      - '[0].fields.sections.items[0].fields.title'
-      - '[0].fields.sections.items[0].fields.subtitle'
+
 models:
   config:
     type: config
