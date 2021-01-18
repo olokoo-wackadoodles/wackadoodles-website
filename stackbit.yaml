@@ -261,6 +261,18 @@ models:
     label: Home Hero Section
     extends:
       - section
+    fields:
+      - type: markdown
+        name: title
+        label: Heading Text
+        required: true
+      - type: markdown
+        name: content
+        label: Content
+      - type: image
+        name: cover_image_path
+        label: Cover Image
+
   section_contact_form:
     type: object
     label: Contact Section
