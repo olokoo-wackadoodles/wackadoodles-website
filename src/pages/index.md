@@ -1,8 +1,9 @@
 ---
 title: Home
 sections:
-  - section_id: lorem-ipsum
-    title: |-
+  - section_id: home-main-hero
+    title: Main Hero
+    heading_text: |-
       ## Welcome to our
       # Blended family!
     content: >-

@@ -263,7 +263,7 @@ models:
       - section
     fields:
       - type: markdown
-        name: title
+        name: heading_text
         label: Heading Text
         required: true
       - type: markdown

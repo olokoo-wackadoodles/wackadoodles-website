@@ -14,13 +14,13 @@ export default class SectionHomeHero extends React.Component {
                 <div className="right-squiggle">
                     <img className="squiggle-image" src="/images/blue-white-squiggles.svg" />
                 </div>
-                {(_.get(section, 'title', null) || _.get(section, 'content', null)) && (
+                {(_.get(section, 'heading_text', null) || _.get(section, 'content', null)) && (
                 <div className="container">
                     <div className="row">
                         <div className="col-100 col-small-1-2 vertical-align-middle">
-                            {_.get(section, 'title', null) && (
+                            {_.get(section, 'heading_text', null) && (
                             <div className="hero-heading">
-                                {markdownify(_.get(section, 'title', null))}
+                                {markdownify(_.get(section, 'heading_text', null))}
                             </div>
                             )}
                             {_.get(section, 'content', null) && (
