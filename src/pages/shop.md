@@ -9,5 +9,4 @@ sections:
     entries_to_show: 20
     type: section_shop
 template: advanced
-wrapper_classes: shop-page
 ---

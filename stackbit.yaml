@@ -107,10 +107,6 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the page displayed in meta data
-      - type: string
-        name: wrapper_classes
-        label: Wrapper Classes
-        description: Class string added to wrapper div
       - type: list
         name: sections
         label: Sections
@@ -146,10 +142,7 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the page displayed in meta data
-      - type: string
-        name: wrapper_classes
-        label: Wrapper Classes
-        description: Class string added to wrapper div
+
   diary:
     type: page
     urlPath: '/entries/{slug}'
