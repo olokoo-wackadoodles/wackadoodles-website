@@ -13,7 +13,7 @@ sections:
       communicate effectively.
     cover_image_path: images/wackadoodles-welcome-to-our-family-cover.jpg
     type: section_home_hero
-  - title: Recent Diary Entries
+  - title: Recent Journal Entries
     section_id: recent-diary-entries
     has_more_link: true
     more_link_text: Keep reading
