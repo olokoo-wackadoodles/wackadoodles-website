@@ -18,7 +18,7 @@ pageData:
       - '[0].fields.sections.items[0].fields.subtitle'
 models:
   config:
-    type: data
+    type: config
     label: Site Configuration
     fields:
       - type: string
