@@ -23,7 +23,7 @@ export default class Body extends React.Component {
                     )}
                     {/* <script data-account="BoSJAjipCh" async src="https://cdn.userway.org/widget.js" /> */}
                 </Helmet>
-                <div className={'wrapper' + (_.get(this.props, 'pageContext.frontmatter.wrapper_classes', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.wrapper_classes', null)) : '')}>
+                <div className="wrapper">
                     <Header {...this.props} />
                     <div className="page-content">
                         {this.props.children}
