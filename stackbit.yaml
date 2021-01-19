@@ -171,6 +171,10 @@ models:
         name: date
         label: Date
         required: true
+      - type: markdown
+        name: content
+        label: Content
+        required: true
 
   shop:
     type: page
