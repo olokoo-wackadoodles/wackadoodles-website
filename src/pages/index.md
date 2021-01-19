@@ -16,7 +16,7 @@ sections:
   - title: Recent Journal Entries
     section_id: recent-diary-entries
     has_more_link: true
-    more_link_text: Keep reading
+    more_link_text: Read more
     show_section_heading: true
     section_heading_text: Recent Journal Entries
     entries_to_show: 2
