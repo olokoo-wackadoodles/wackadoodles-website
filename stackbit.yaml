@@ -134,7 +134,7 @@ models:
     label: Page
     layout: page
     exclude:
-      - entries/**
+      - journal/**
       - shop/**
     fields:
       - type: string
@@ -153,9 +153,9 @@ models:
 
   diary:
     type: page
-    urlPath: '/entries/{slug}'
-    label: Diary
-    folder: entries
+    urlPath: '/journal/{slug}'
+    label: Journal
+    folder: journal
     layout: diary
     fields:
       - type: string
