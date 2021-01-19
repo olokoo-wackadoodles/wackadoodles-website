@@ -1,10 +1,8 @@
 ---
 title: First day of school
-subtitle: A cautionary tale about people drinking coffee
 excerpt: >-
   Halvah apple pie danish. Gingerbread topping brownie biscuit sweet roll candy dragée tiramisu. Toffee bonbon lemon drops chocolate cake gingerbread. Gummi bears cake chupa chups. Tiramisu icing pie.
 date: '2020-12-28'
-thumb_img_path: images/blog-perfect-pour-over.jpg
 template: diary
 ---
 
