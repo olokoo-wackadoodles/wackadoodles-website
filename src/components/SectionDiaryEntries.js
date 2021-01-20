@@ -7,8 +7,8 @@ import {getPages, Link, withPrefix} from '../utils';
 export default class SectionDiaryEntries extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
-        let display_posts = getPages(this.props.pageContext.pages, '/entries');
-        let entries_to_show = _.get(section, 'entries_to_show', null) || 5;
+        let display_posts = getPages(this.props.pageContext.pages, '/journal');
+        let entries_to_show = _.get(section, 'entries_to_show', null) || 6;
         return (
             <section id={_.get(section, 'section_id', null)} className="posts">
                 <div className="container py-5">

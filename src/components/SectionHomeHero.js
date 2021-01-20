@@ -8,12 +8,6 @@ export default class SectionHomeHero extends React.Component {
         let section = _.get(this.props, 'section', null);
         return (
             <section id={_.get(this.props, 'section.section_id', null)} className="home-hero">
-                <div className="left-squiggle">
-                    <img className="squiggle-image" src="/images/blue-white-squiggles.svg" />
-                </div>
-                <div className="right-squiggle">
-                    <img className="squiggle-image" src="/images/blue-white-squiggles.svg" />
-                </div>
                 {(_.get(section, 'heading_text', null) || _.get(section, 'content', null)) && (
                 <div className="container">
                     <div className="row">

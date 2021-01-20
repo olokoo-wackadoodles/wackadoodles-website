@@ -134,7 +134,7 @@ models:
     label: Page
     layout: page
     exclude:
-      - entries/**
+      - journal/**
       - shop/**
     fields:
       - type: string
@@ -153,9 +153,9 @@ models:
 
   diary:
     type: page
-    urlPath: '/entries/{slug}'
-    label: Diary
-    folder: entries
+    urlPath: '/journal/{slug}'
+    label: Journal
+    folder: journal
     layout: diary
     fields:
       - type: string
@@ -166,11 +166,16 @@ models:
       - type: string
         name: excerpt
         label: Excerpt
-        description: The excerpt of the post displayed in the blog feed and in meta data
+        description: The excerpt of the post displayed in the diary feed and in meta data
       - type: date
         name: date
         label: Date
         required: true
+      - type: markdown
+        name: content
+        label: Content
+        required: true
+
   shop:
     type: page
     urlPath: '/shop/{slug}'
