@@ -19,5 +19,123 @@
     }
 }
 .product-detail {
-    
+    .short-description {
+        font-weight: $bold;
+        padding: 12px 0;
+        line-height: 1.7;
+        p {
+            line-height: 1.7;
+        }
+    }
+    .long-description {
+        color: $color-black-5;
+        padding: 12px 0;
+        line-height: 1.4;
+        p {
+            line-height: 1.4;
+        }
+    }
+    .pricing {
+        .price {
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0;
+        }
+        .shipping-pricing {
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0 0 0 10px;
+            font-size: $micro;
+        }
+    }
+    .buy-now-container {
+        margin-top: 30px;
+    }
+    .carousel {
+        &.carousel-slider {
+            .control-arrow {
+                background-color: $color-white;
+                top: 50%;
+                margin-top: -18px;
+                bottom: auto;
+
+                opacity: 1;
+                filter: alpha(opacity=100);
+
+                padding-top: 0;
+                &:before {
+                    margin: 8px 0;
+                }
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+        .control-arrow {
+            background-color: $color-white;
+            border: 1px solid $color-gray-1;
+            border-radius: 28px;
+            width: 28px;
+            height: 28px;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            margin-top: -18px;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+
+            &:before {
+                margin: 5px 0;
+            }
+
+            &.control-next {
+                right: 20px;
+                &:before {
+                    border-left: 6px solid $color-black-0;
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                }
+            }
+            &.control-prev {
+                left: 20px;
+                &:before {
+                    border-right: 6px solid $color-black-0;
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                }
+            }
+        }
+        .thumbs-wrapper {
+            margin: 0;
+        }
+        .carousel-status {
+            text-shadow: none;
+            color: $color-black-0;
+        }
+        .thumbs {
+            padding: 0px;
+            .thumb {
+                padding: 0px;
+                &.selected,
+                &:hover {
+                    border: 3px solid $secondary-color;
+                }
+            }
+        }
+        .control-dots {
+            .dot {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                background-color: $secondary-color;
+                box-shadow: none;
+                &.selected,
+                &:hover {
+                    background-color: $color-black-0;
+                }
+            }
+        }
+    }
 }

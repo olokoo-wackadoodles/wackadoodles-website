@@ -197,9 +197,15 @@ models:
         label: Shop Link
         description: Link to square shop page for this product
         required: true
+      - type: image
+        name: main_image
+        label: Main Image
+        description: The first image that displays for product
+        required: true
       - type: date
         name: date
-        label: Date
+        label: Publish Date
+        description: Date product added to control order on page
         required: true
 
   action:

@@ -17,7 +17,7 @@ button,
         border: none;
     }
 
-    &:not(.logo):not(.nav-link):not(.underline-link):not(.hamburger):not(.social-link):not(.instagram-feed-link) {
+    &:not(.logo):not(.nav-link):not(.underline-link):not(.hamburger):not(.social-link):not(.instagram-feed-link):not(.button-link):not(.control-arrow) {
         font-weight: inherit;
         position: relative;
         z-index: 1;
@@ -59,6 +59,21 @@ button,
 
     &:after {
         display: none;
+    }
+}
+
+.button-link {
+    background-color: $secondary-color;
+    display: inline-block;
+    line-height: 58px;
+    height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: $bold;
+
+    &.full-width {
+        width: 100%;
+        display: block;
     }
 }
 

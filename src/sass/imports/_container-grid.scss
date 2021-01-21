@@ -47,6 +47,30 @@ $column-padding: 20px;
 	padding-left: 0;
 	padding-right: 0;
 }
+@mixin px-1 {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+@mixin px-2 {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+@mixin px-3 {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+@mixin px-4 {
+	padding-left: 4em;
+	padding-right: 4em;
+}
+@mixin px-5 {
+	padding-left: 5em;
+	padding-right: 5em;
+}
+@mixin px-10 {
+	padding-left: 10em;
+	padding-right: 10em;
+}
 @mixin py-0 {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -54,6 +78,18 @@ $column-padding: 20px;
 @mixin py-1 {
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+@mixin py-2 {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+@mixin py-3 {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+@mixin py-4 {
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 @mixin py-5 {
 	padding-top: 5em;
@@ -101,11 +137,41 @@ $column-padding: 20px;
 .p-0 {
 	@include p-0;
 }
+.px-0 {
+	@include px-0;
+}
+.px-1 {
+	@include px-1;
+}
+.px-2 {
+	@include px-2;
+}
+.px-3 {
+	@include px-3;
+}
+.px-4 {
+	@include px-4;
+}
+.px-5 {
+	@include px-5;
+}
+.px-10 {
+	@include px-10;
+}
 .py-0 {
 	@include py-0;
 }
 .py-1 {
 	@include py-1;
+}
+.py-2 {
+	@include py-2;
+}
+.py-3 {
+	@include py-3;
+}
+.py-4 {
+	@include py-4;
 }
 .py-5 {
 	@include py-5;
