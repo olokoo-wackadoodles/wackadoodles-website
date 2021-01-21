@@ -1,6 +1,10 @@
 ---
 title: Goodie Bags
 main_image: images/wackadoodles-welcome-to-our-family-cover.jpg
+additional_images:
+    - images/wackadoodles-welcome-to-our-family-cover.jpg
+    - images/wackadoodles-welcome-to-our-family-cover.jpg
+    - images/wackadoodles-welcome-to-our-family-cover.jpg
 shop_link: https://squareup.com/
 date: '2016-09-04'
 short_description: >-
