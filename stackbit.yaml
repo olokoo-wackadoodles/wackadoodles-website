@@ -202,6 +202,13 @@ models:
         label: Main Image
         description: The first image that displays for product
         required: true
+      - type: list
+        name: additional_images
+        label: Additional Images
+        required: true
+        items:
+          type: image
+          label: Additional Image
       - type: date
         name: date
         label: Publish Date
