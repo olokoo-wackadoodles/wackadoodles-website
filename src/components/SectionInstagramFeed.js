@@ -18,8 +18,8 @@ export default class SectionInstagramFeed extends React.Component {
                 <div className="instagram-feed row">
                     {photos &&
                         photos.map(({ id, caption, src, width, height, url }) => (
-                        <div className="col-1-3">
-                            <a key={id} href={url} target="_new" className="instagram-feed-link">
+                        <div className="col-1-3" key={id}>
+                            <a href={url} target="_new" className="instagram-feed-link">
                                 <img className="instagram-feed-item" src={src} alt={caption} />
                             </a>
                         </div>

@@ -21,7 +21,7 @@ export default class SectionDiaryEntries extends React.Component {
                     )}
                     <div className="row">
                         {_.map(_.orderBy(_.take(display_posts, entries_to_show), 'frontmatter.date', 'desc'), (post, post_idx) => (
-                            <div className="col-1-2">
+                            <div className="col-1-2" key={post_idx}>
                                 <div className="diary-entry">
                                     <h2>Dear Diary,</h2>
                                     <h4 className="publish-date">{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</h4>
@@ -29,7 +29,7 @@ export default class SectionDiaryEntries extends React.Component {
                                     <p className="summary">{_.get(post, 'frontmatter.excerpt', null)}</p>
                                     )}
                                     {((_.get(section, 'has_more_link', null) === true) && _.get(section, 'more_link_text', null)) && (
-                                        <Link key={post_idx} to={withPrefix(_.get(post, 'url', null))} className="button-link">
+                                        <Link to={withPrefix(_.get(post, 'url', null))} className="button-link">
                                             {_.get(section, 'more_link_text', null)}
                                         </Link>
                                     )}
