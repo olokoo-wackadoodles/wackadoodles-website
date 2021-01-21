@@ -31,7 +31,7 @@ export default class Shop extends React.Component {
                         <div className="content py-5">
                             <div className="row">
                                 <div className="col-1-2">
-                                    <Carousel showArrows={true}>
+                                    <Carousel showArrows={true} showStatus={false} thumbWidth={140}>
                                         {/* Get Main Image and Display First */}
                                         {_.get(this.props, 'pageContext.frontmatter.main_image', null) && (<div><img className="product-image" src={withPrefix(_.get(this.props, 'pageContext.frontmatter.main_image', null))} alt={_.get(this.props, 'pageContext.frontmatter.title', null)}/></div>)}
 

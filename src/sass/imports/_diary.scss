@@ -1,6 +1,7 @@
 .diary-entry {
     padding: 60px 40px;
     background-color: $color-white;
+    border-radius: $site-border-radius;
 
     .publish-date {
         color: $color-black-5;

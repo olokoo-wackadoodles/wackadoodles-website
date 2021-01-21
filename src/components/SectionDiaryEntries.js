@@ -29,7 +29,7 @@ export default class SectionDiaryEntries extends React.Component {
                                     <p className="summary">{_.get(post, 'frontmatter.excerpt', null)}</p>
                                     )}
                                     {((_.get(section, 'has_more_link', null) === true) && _.get(section, 'more_link_text', null)) && (
-                                        <Link key={post_idx} to={withPrefix(_.get(post, 'url', null))} className="text-link">
+                                        <Link key={post_idx} to={withPrefix(_.get(post, 'url', null))} className="button-link">
                                             {_.get(section, 'more_link_text', null)}
                                         </Link>
                                     )}
