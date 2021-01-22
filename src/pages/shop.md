@@ -1,5 +1,5 @@
 ---
-title: Shop with us
+title: 'Shop All '
 excerpt: Show with us
 sections:
   - title: Show with us
