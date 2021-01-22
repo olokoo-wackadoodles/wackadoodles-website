@@ -2,13 +2,15 @@
 title: Welcome to our Blended Family
 main_image: images/wackadoodles-welcome-to-our-family-cover.jpg
 additional_images:
-    - images/wackadoodles-welcome-to-our-family-cover.jpg
-    - images/wackadoodles-welcome-to-our-family-cover.jpg
-    - images/wackadoodles-welcome-to-our-family-cover.jpg
-shop_link: https://squareup.com/
+  - images/wackadoodles-welcome-to-our-family-cover.jpg
+  - images/wackadoodles-welcome-to-our-family-cover.jpg
+  - images/wackadoodles-welcome-to-our-family-cover.jpg
+shop_link: >-
+  https://shop-wackadoodles.square.site/product/welcome-to-our-blended-family-book/
 date: '2016-09-04'
 short_description: >-
-    We are the Wackadoodles: Welcome to our Blended Family. Books will be signed by author.
+  We are the Wackadoodles: Welcome to our Blended Family. Books will be signed
+  by author.
 price: $10.00
 template: shop
 ---
