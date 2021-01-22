@@ -3,7 +3,6 @@ title: Welcome to our Blended Family
 main_image: images/wackadoodles-welcome-to-our-family-cover.jpg
 additional_images:
   - images/wackadoodles-welcome-to-our-family-cover.jpg
-  - null
 shop_link: >-
   https://shop-wackadoodles.square.site/product/welcome-to-our-blended-family-book/
 date: '2016-09-04'
