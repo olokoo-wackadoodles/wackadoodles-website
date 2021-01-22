@@ -12,10 +12,10 @@ export default class SectionShop extends React.Component {
         return (
             <section id={_.get(section, 'section_id', null)} className="posts">
                 <div className="container py-5">
-                    {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
+                    {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'title', null)) && (
                         <div className="row">
                             <div className="col-100 text-align-center">
-                                <h1>{_.get(section, 'section_heading_text', null)}</h1>
+                                <h1>{_.get(section, 'title', null)}</h1>
                             </div>
                         </div>
                     )}
