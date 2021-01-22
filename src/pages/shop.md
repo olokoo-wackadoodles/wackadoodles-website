@@ -2,7 +2,7 @@
 title: Shop with us
 excerpt: Show with us
 sections:
-  - title: Shop with us
+  - title: Shop All
     section_id: shop-with-us
     show_section_heading: true
     section_heading_text: Shop with us
