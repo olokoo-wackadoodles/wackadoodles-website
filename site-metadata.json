@@ -2,7 +2,7 @@
     "description": "We are The Wackdoodles",
     "header": {
         "title": "We are The Wackdoodles",
-        "logo": "/images/wackadoodles-logo-yellow.svg",
+        "logo": "images/thewackadoodles.svg",
         "has_nav": true,
         "nav_links": [
             {
