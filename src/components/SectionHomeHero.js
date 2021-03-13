@@ -11,7 +11,7 @@ export default class SectionHomeHero extends React.Component {
                 {(_.get(section, 'heading_text', null) || _.get(section, 'content', null)) && (
                 <div className="container">
                     <div className="row">
-                        <div className="col-100 col-small-1-2 vertical-align-middle">
+                        <div className="col-2-3 col-small-1-2 vertical-align-middle">
                             {_.get(section, 'heading_text', null) && (
                             <div className="hero-heading">
                                 {markdownify(_.get(section, 'heading_text', null))}
@@ -23,7 +23,7 @@ export default class SectionHomeHero extends React.Component {
                             </div>
                             )}
                         </div>
-                        <div className="col-100 col-small-1-2 vertical-align-middle">
+                        <div className="col-1-3 col-small-1-2 vertical-align-middle">
                             {_.get(section, 'cover_image_path', null) && (
                             <div className="cover-image">
                                 <img src={_.get(section, 'cover_image_path', null)} />

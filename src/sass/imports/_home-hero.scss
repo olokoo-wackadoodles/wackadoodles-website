@@ -2,19 +2,21 @@
 	position: relative;
 	background-color: $color-yellow;
 	overflow-y: hidden;
-	padding: 50px 0;
+	padding: 30px 0;
 
-	background-image: url('/images/wackdoodles-squiggles-hero.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center center;
 
+	overflow-x: hidden;
+
 	@include respond-up(small) {
-		padding: 90px 0;
+		padding: 60px 0;
 	}
 
 	@include respond-up(medium) {
 		padding: 130px 0;
+		background-image: url('/images/wackdoodles-squiggles-hero.png');
 	}
 
 	.hero-heading {
@@ -23,30 +25,79 @@
 			color: $color-white;
 		}
 		h1 {
-			font-size: 66px;
-			line-height: 58px;
+			font-size: 26px;
+			line-height: 28px;
+			@include respond-up(small) {
+				font-size: 46px;
+				line-height: 48px;
+			}
+			@include respond-up(medium) {
+				font-size: 66px;
+				line-height: 58px;
+			}
 		}
 		h2 {
-			font-size: 52px;
+			font-size: 17px;
+			@include respond-up(small) {
+				font-size: 38px;
+			}
+			@include respond-up(medium) {
+				font-size: 52px;
+			}
 		}
 	}
 
 	.hero-content {
 		width: 100%;
-		margin-top: 40px;
+		margin-top: 20px;
+		@include respond-up(small) {
+			margin-top: 40px;
+		}
 		p {
-			font-size: $tiny;
+			font-size: $micro;
+			@include respond-up(small) {
+				font-size: $tiny;
+			}
+
 			color: $color-white;
 		}
 	}
 
-	$cover-image-size: 350px;
-	$cover-image-outset-offset: 30px;
+	$cover-image-size: 200px;
+	$cover-image-outset-offset: 13px;
+
+	$cover-small-image-size: 250px;
+	$cover-small-image-outset-offset: 15px;
+
+	$cover-medium-image-size: 350px;
+	$cover-medium-image-outset-offset: 30px;
+
+	$cover-large-image-size: 350px;
+	$cover-large-image-outset-offset: 30px;
+
+
 	.cover-image {
 		position: relative;
 		width: $cover-image-size + $cover-image-outset-offset;
 		height: $cover-image-size + $cover-image-outset-offset;
-		float: right;
+		float: left;
+
+		@include respond-up(small) {
+			width: $cover-small-image-size + $cover-small-image-outset-offset;
+			height: $cover-small-image-size + $cover-small-image-outset-offset;
+			float: right;
+		}
+
+		@include respond-up(medium) {
+			width: $cover-medium-image-size + $cover-medium-image-outset-offset;
+			height: $cover-medium-image-size + $cover-medium-image-outset-offset;
+		}
+
+		@include respond-up(large) {
+			width: $cover-large-image-size + $cover-large-image-outset-offset;
+			height: $cover-large-image-size + $cover-large-image-outset-offset;
+		}
+
 		@include clear-fix;
 		img,
 		.cover-image-outset {
@@ -54,12 +105,39 @@
 			width: $cover-image-size;
 			height: $cover-image-size;
 			border-radius: $site-border-radius;
+			@include respond-up(small) {
+				width: $cover-small-image-size;
+				height: $cover-small-image-size;
+				border-radius: $site-border-radius;
+			}
+			@include respond-up(medium) {
+				width: $cover-medium-image-size;
+				height: $cover-medium-image-size;
+				border-radius: $site-border-radius;
+			}
+			@include respond-up(large) {
+				width: $cover-large-image-size;
+				height: $cover-large-image-size;
+				border-radius: $site-border-radius;
+			}
 			z-index: 2;
 		}
 
 		.cover-image-outset {
 			top: $cover-image-outset-offset;
 			left: $cover-image-outset-offset;
+			@include respond-up(small) {
+				top: $cover-small-image-outset-offset;
+				left: $cover-small-image-outset-offset;
+			}
+			@include respond-up(medium) {
+				top: $cover-medium-image-outset-offset;
+				left: $cover-medium-image-outset-offset;
+			}
+			@include respond-up(large) {
+				top: $cover-large-image-outset-offset;
+				left: $cover-large-image-outset-offset;
+			}
 			background-color: $color-blue-normal;
 			z-index: 1;
 		}
