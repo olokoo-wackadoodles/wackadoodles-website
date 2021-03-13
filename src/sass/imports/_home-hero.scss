@@ -25,7 +25,7 @@
 			color: $color-white;
 		}
 		h1 {
-			font-size: 26px;
+			font-size: 30px;
 			line-height: 28px;
 			@include respond-up(small) {
 				font-size: 46px;
@@ -50,8 +50,10 @@
 	.hero-content {
 		width: 100%;
 		margin-top: 20px;
+		padding-right: 5%;
 		@include respond-up(small) {
 			margin-top: 40px;
+			padding-right: 0;
 		}
 		p {
 			font-size: $micro;
