@@ -19,9 +19,15 @@
 
         .logo {
             display: inline-block;
-            padding-top: $logo-top-spacing;
+            padding-top: $logo-top-spacing-mobile;
+            @include respond-up(small) {
+                padding-top: $logo-top-spacing;
+            }
             img {
-                height: $logo-size;
+                height: $logo-size-mobile;
+                @include respond-up(small) {
+                    height: $logo-size;
+                }
             }
         }
     }
@@ -31,6 +37,11 @@
         top: 0;
         right: $mobile-gutter;
         z-index: 2;
+
+        display: none;
+        @include respond-up(small) {
+            display: initial;
+        }
 
         .nav-link {
             height: $header-height;

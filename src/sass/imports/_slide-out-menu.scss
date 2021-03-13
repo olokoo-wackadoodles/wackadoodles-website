@@ -21,9 +21,12 @@ $hamburger-hover-opacity: 1;
         padding-left: 7px;
         color: $color-white;
         font-size: $tiny;
+        display: none;
+        @include respond-up(small) {
+            display: inline-block;
+        }
         font-weight: $bold;
         text-transform: uppercase;
-        display: inline-block;
         vertical-align: middle;
     }
 
@@ -40,12 +43,19 @@ $hamburger-hover-opacity: 1;
         }
         .hamburger-label {
             color: $color-black-0;
+            display: inline-block;
         }
     }
 }
 
 .slide-out-menu {
-    width: 30vw;
+    width: 80vw;
+    @include respond-up(small) {
+        width: 50vw;
+    }
+    @include respond-up(medium) {
+        width: 30vw;
+    }
     height: 100vh;
     background-color: $color-white;
     position: fixed;
@@ -59,7 +69,15 @@ $hamburger-hover-opacity: 1;
     padding: 100px 6vw;
 
     &.hide {
-        transform: translate3d(-30vw, 0, 0);
+        transform: translate3d(-80vw, 0, 0);
+        @include respond-up(small) {
+            width: 50vw;
+            transform: translate3d(-30vw, 0, 0);
+        }
+        @include respond-up(medium) {
+            width: 30vw;
+            transform: translate3d(-30vw, 0, 0);
+        }
     }
 
     &.show {

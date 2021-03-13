@@ -43,7 +43,9 @@ $tablet: 768px;
 $header-height: 90px;
 $header-callout-height: 45px;
 $logo-size: $header-height - 46px;
+$logo-size-mobile: $header-height - 56px;
 $logo-top-spacing: 23px;
+$logo-top-spacing-mobile: 28px;
 
 // spacing
 $wrapper-top-spacing: $header-height + $header-callout-height;
