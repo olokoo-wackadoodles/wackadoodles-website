@@ -20,6 +20,12 @@
             {
                 "label": "Contact",
                 "url": "/contact/"
+            },
+            {
+                "label": "lorem-ipsum",
+                "url": "lorem-ipsum",
+                "new_window": false,
+                "type": "action"
             }
         ],
         "secondary_nav_links": [
