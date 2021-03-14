@@ -30,8 +30,9 @@ export default class Shop extends React.Component {
                     <article className="product-item">
                         <div className="content py-2 py-small-5">
                             <div className="row">
-                                <div className="col-1-2">
-                                    <Carousel showArrows={true} showStatus={false} thumbWidth={140}>
+                                <div className="col-100 col-small-1-2">
+                                    <div className="h1 mobile-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</div>
+                                    <Carousel showArrows={true} showStatus={false} thumbWidth={null}>
                                         {/* Get Main Image and Display First */}
                                         {_.get(this.props, 'pageContext.frontmatter.main_image', null) && (<div><img className="product-image" src={withPrefix(_.get(this.props, 'pageContext.frontmatter.main_image', null))} alt={_.get(this.props, 'pageContext.frontmatter.title', null)}/></div>)}
 
@@ -43,9 +44,9 @@ export default class Shop extends React.Component {
                                         ))}
                                     </Carousel>
                                 </div>
-                                <div className="col-1-2">
+                                <div className="col-100 col-small-1-2">
                                     <div className="px-1">
-                                        <h1>{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                                        <h1 className="desktop-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
                                         <div className="short-description">
                                             {_.get(this.props, 'pageContext.frontmatter.short_description', null)}
                                         </div>
