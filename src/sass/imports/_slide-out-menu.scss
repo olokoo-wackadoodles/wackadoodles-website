@@ -72,7 +72,7 @@ $hamburger-hover-opacity: 1;
         transform: translate3d(-80vw, 0, 0);
         @include respond-up(small) {
             width: 50vw;
-            transform: translate3d(-30vw, 0, 0);
+            transform: translate3d(-50vw, 0, 0);
         }
         @include respond-up(medium) {
             width: 30vw;

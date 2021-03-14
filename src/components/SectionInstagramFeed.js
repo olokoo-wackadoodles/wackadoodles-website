@@ -31,7 +31,7 @@ export default class SectionInstagramFeed extends React.Component {
 
         return (
             <div className="section background--white">
-                <div className="container py-5">
+                <div className="container py-2 py-small-5">
                     <div className="row">
                         <div className="col-100 text-align-center">
                             <h1>{_.get(section, 'section_heading_text', null)}</h1>

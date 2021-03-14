@@ -21,7 +21,7 @@ export default class Post extends React.Component {
         return (
             <Layout {...this.props}>
             <section className="post">
-                <div className="container py-5">
+                <div className="container py-2 py-small-5">
                     <div className="diary-entry">
                         <header className="hero">
                             <div className="copy">

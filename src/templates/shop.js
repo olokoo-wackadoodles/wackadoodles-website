@@ -28,7 +28,7 @@ export default class Shop extends React.Component {
             <section className="product-detail">
                 <div className="container">
                     <article className="product-item">
-                        <div className="content py-5">
+                        <div className="content py-2 py-small-5">
                             <div className="row">
                                 <div className="col-1-2">
                                     <Carousel showArrows={true} showStatus={false} thumbWidth={140}>
