@@ -16,7 +16,7 @@ export default class SectionContactForm extends React.Component {
                     </div>
                 )}
                 <div className="row">
-                    <div className="col-100
+                    <div className="col-100"></div>
                 <form name={_.get(section, 'form_name', null) || 'contact'} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />
