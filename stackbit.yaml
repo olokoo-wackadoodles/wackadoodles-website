@@ -307,7 +307,8 @@ models:
       - section
     fields:
       - type: string
-      
+        name: form_name
+        
   section_shop:
     type: object
     label: Shop Section
