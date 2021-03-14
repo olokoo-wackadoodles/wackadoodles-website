@@ -34,13 +34,11 @@ export default class Shop extends React.Component {
                                     <div className="h1 mobile-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</div>
                                     <Carousel showArrows={true} showStatus={false} thumbWidth={null}>
                                         {/* Get Main Image and Display First */}
-                                        {_.get(this.props, 'pageContext.frontmatter.main_image', null) && (<div><img className="product-image" src={withPrefix(_.get(this.props, 'pageContext.frontmatter.main_image', null))} alt={_.get(this.props, 'pageContext.frontmatter.title', null)}/></div>)}
+                                        {_.get(this.props, 'pageContext.frontmatter.main_image', null) && (<img className="product-image" src={withPrefix(_.get(this.props, 'pageContext.frontmatter.main_image', null))} alt={_.get(this.props, 'pageContext.frontmatter.title', null)} />)}
 
                                         {/* Get Additional Images and Display Next */}
                                         {_.map(_.get(this.props, 'pageContext.frontmatter.additional_images', null), (additional_image_path, additional_image_idx) => (
-                                            <div key={additional_image_idx}>
-                                                <img className="product-image" src={withPrefix(additional_image_path)} alt={_.get(this.props, 'pageContext.frontmatter.title', null)}/>
-                                            </div>
+                                            <img className="product-image" key={additional_image_idx} src={withPrefix(additional_image_path)} alt={_.get(this.props, 'pageContext.frontmatter.title', null)} />
                                         ))}
                                     </Carousel>
                                 </div>

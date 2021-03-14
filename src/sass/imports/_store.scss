@@ -87,11 +87,10 @@
             border-radius: $site-border-radius;
             overflow: hidden;
             .slide {
-                overflow: hidden;
-                div {
-                    overflow: hidden;
-                }
+                background-color: $color-white;
+                padding: $site-border-radius;
                 img {
+                    border: 4px solid $color-gray-1;
                     border-radius: $site-border-radius;
                 }
             }
