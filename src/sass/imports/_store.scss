@@ -83,11 +83,9 @@
     }
     .carousel {
         &.carousel-slider {
-            .slide {
-                img {
-                    border-radius: $site-border-radius;
-                }
-            }
+            border: 4px solid $color-gray-1;
+            border-radius: $site-border-radius;
+            overflow: hidden;
             .control-arrow {
                 background-color: $color-white;
                 top: 50%;
