@@ -87,7 +87,9 @@
             border-radius: $site-border-radius;
             overflow: hidden;
             .slide {
-                overflow: hidden;
+                img {
+                    border-radius: $site-border-radius;
+                }
             }
             .control-arrow {
                 background-color: $color-white;
