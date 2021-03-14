@@ -11,7 +11,7 @@ export default class SectionPortfolio extends React.Component {
         return (
             <section id={_.get(section, 'section_id', null)} className="portfolio">
                 <div className="container">
-                    {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
+                    {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'title', null)) && (
                         <div className="row">
                             <div className="col-100">
                                 <div className="section-heading">
