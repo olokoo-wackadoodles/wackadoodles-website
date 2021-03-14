@@ -305,7 +305,8 @@ models:
     label: Contact Section
     extends:
       - section
-    fields
+    fields:
+      - type
   section_shop:
     type: object
     label: Shop Section
