@@ -309,6 +309,7 @@ models:
       - type: string
         name: form_name
         label: Form Name
+
   section_shop:
     type: object
     label: Shop Section
