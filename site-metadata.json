@@ -23,7 +23,7 @@
             },
             {
                 "label": "Have an idea?",
-                "url": "lorem-ipsum",
+                "url": "/ideas",
                 "new_window": false,
                 "type": "action"
             }
