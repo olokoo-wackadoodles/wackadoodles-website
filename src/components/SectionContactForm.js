@@ -11,7 +11,7 @@ export default class SectionContactForm extends React.Component {
                 {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
                     <div className="row">
                         <div className="col-100 text-align-center">
-                            <h1>{_.get(section, 'section_heading_text', null)}</h1>
+                            <h1>{_.get(section, 'title', null)}</h1>
                         </div>
                     </div>
                 )}
