@@ -17,7 +17,7 @@ export default class SectionPortfolio extends React.Component {
                                 <div className="section-heading">
                                     <div className="eyebrow"></div>
                                     <div className="section-heading-text">
-                                        {_.get(section, 'section_heading_text', null)}
+                                        {_.get(section, 'title', null)}
                                     </div>
                                 </div>
                             </div>
