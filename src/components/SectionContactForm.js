@@ -38,6 +38,8 @@ export default class SectionContactForm extends React.Component {
                                 </li>
                             </ul>
                         </form>
+                    </div>
+                </div>
             </div>
         );
     }
