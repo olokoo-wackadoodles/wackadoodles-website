@@ -306,7 +306,7 @@ models:
     extends:
       - section
     fields:
-      - type
+      - type 
   section_shop:
     type: object
     label: Shop Section
