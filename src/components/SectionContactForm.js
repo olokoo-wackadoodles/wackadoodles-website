@@ -8,7 +8,7 @@ export default class SectionContactForm extends React.Component {
         let section = _.get(this.props, 'section', null);
         return (
             <div className="contact-form container py-2 py-small-5">
-                {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
+                {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'title', null)) && (
                     <div className="row">
                         <div className="col-100 text-align-center">
                             <h1>{_.get(section, 'title', null)}</h1>
