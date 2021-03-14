@@ -87,6 +87,7 @@
             border-radius: $site-border-radius;
             overflow: hidden;
             .slide {
+                overflow: hidden;
                 div {
                     overflow: hidden;
                 }
