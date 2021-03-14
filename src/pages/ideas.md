@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Submit your ideas
 excerpt: Contact Mrs.Wackadoodle
 sections:
   - title: Contact
