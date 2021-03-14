@@ -8,18 +8,18 @@ export default class SectionContactForm extends React.Component {
         let section = _.get(this.props, 'section', null);
         return (
             <div className="contact-form container py-2 py-small-5">
-                {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
-                        <div className="row">
-                            <div className="col-100">
-                                <div className="section-heading">
-                                    <div className="eyebrow"></div>
-                                    <div className="section-heading-text">
-                                        {_.get(section, 'section_heading_text', null)}
-                                    </div>
+            {((_.get(section, 'show_section_heading', null) === true) && _.get(section, 'section_heading_text', null)) && (
+                    <div className="row">
+                        <div className="col-100">
+                            <div className="section-heading">
+                                <div className="eyebrow"></div>
+                                <div className="section-heading-text">
+                                    {_.get(section, 'section_heading_text', null)}
                                 </div>
                             </div>
                         </div>
-                    )}
+                    </div>
+                )}
                 <form name={_.get(section, 'form_name', null) || 'contact'} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />
