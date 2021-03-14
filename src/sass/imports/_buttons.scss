@@ -63,6 +63,8 @@ button,
 }
 
 .button-link {
+    border: none;
+    outline: 0;
     background-color: $secondary-color;
     display: inline-block;
     line-height: 58px;
@@ -70,6 +72,12 @@ button,
     padding: 0 30px;
     text-align: center;
     font-weight: $bold;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
 
     border-radius: $site-border-radius;
 
