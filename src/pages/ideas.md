@@ -1,6 +1,6 @@
 ---
 title: Submit your ideas
-excerpt: Contact Mrs.Wackadoodle
+excerpt: 'Have an idea? We would love to hear '
 sections:
   - title: Contact
     section_id: contact-section
