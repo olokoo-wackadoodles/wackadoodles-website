@@ -346,5 +346,5 @@ models:
         name: posts_to_show
         label: Posts To Show
       - type: string
-        name: instagram_user_id
-        label: Instagram User ID
+        name: instagram_access_token
+        label: Instagram Access Token

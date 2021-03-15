@@ -25,7 +25,7 @@ sections:
     section_id: recent-insta-feed
     show_section_heading: true
     section_heading_text: Recent Feed
-    instagram_user_id: 43238245701
+    instagram_access_token: IGQVJWYV9HejYzNk1ZAS0E0ZAkgwZA0E3ZA1dsbkpudjJaUmlPSEFZAU2ZAYR3IwRU1pbzQ5RWZAmenQ3dVNzX1U1OE1zMnRjQ1JJSVNQRVgtcC1Hb1JFbjhDWHZA3U19pTnY4Ri1HcUc3ODFMdC1oUGFPcXZACMjNTUlpCVnA4ZAjdV
     posts_to_show: 6
     type: section_instagram_feed
 template: advanced

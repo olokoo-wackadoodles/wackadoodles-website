@@ -10,24 +10,23 @@ export default class SectionInstagramFeed extends React.Component {
 
         const InstagramFeed = () => {
             let photos = useInstagramFeed({
-                userId: _.get(section, 'instagram_user_id', null) || '1939887245',
-                thumbnailWidth: 640,
+                accessToken: _.get(section, 'instagram_access_token', null),
                 photoCount: _.get(section, 'posts_to_show', null) || 12,
             });
             return (
                 <div className="instagram-feed row">
                     {photos &&
-                        photos.map(({ id, caption, src, width, height, url }) => (
+                        photos.map(({ id, caption, media_url, permalink }) => (
                         <div className="col-1-3" key={id}>
-                            <a href={url} target="_new" className="instagram-feed-link">
-                                <img className="instagram-feed-item" src={src} alt={caption} />
+                            <a href={permalink} target="_new" className="instagram-feed-link">
+                                <img className="instagram-feed-item" src={media_url} alt={caption} />
                             </a>
                         </div>
                         )
                     )}
                 </div>
             )
-        }
+        };
 
         return (
             <div className="section background--white">
