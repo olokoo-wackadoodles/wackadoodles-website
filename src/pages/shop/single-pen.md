@@ -2,7 +2,7 @@
 title: Random Color Pen
 short_description: Pen color will be chosen randomly.
 shop_link: lorem-ipsum
-price: $10.00
+price: $4.00
 additional_images:
   - images/its-nice-to-be-kind-2.jpg
 date: '2021-03-16'
