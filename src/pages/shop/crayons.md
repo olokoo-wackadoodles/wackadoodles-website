@@ -1,6 +1,6 @@
 ---
 title: Coloring Book + Crayons
-short_description: You will recieve 3 pens.
+short_description: Coloring book with our special crayons.
 shop_link: lorem-ipsum
 price: $10.00
 additional_images:
