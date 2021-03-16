@@ -56,7 +56,7 @@ export default class Shop extends React.Component {
                                             <span className="shipping-pricing">plus shipping and handling</span>
                                         </div>
                                         <div className="buy-now-container">
-                                            <a href={_.get(this.props, 'pageContext.frontmatter.shop_link', null)} className="button-link full-width buy-now-link">Buy Now with Square</a>
+                                            <a href={_.get(this.props, 'pageContext.frontmatter.shop_link', null)} className="button-link full-width buy-now-link">Buy Now</a>
                                         </div>
                                     </div>
                                 </div>
