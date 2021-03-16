@@ -1,6 +1,6 @@
 ---
 title: Book Marks (5-pack)
-short_description: One pen will be chosen at random.
+short_description: 5 awesome paper book marks.
 shop_link: lorem-ipsum
 price: $4.00
 additional_images:
