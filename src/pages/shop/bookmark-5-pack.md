@@ -4,7 +4,6 @@ short_description: 5 awesome paper book marks.
 shop_link: lorem-ipsum
 price: $3.00
 additional_images:
-  - null
   - images/pen-4.jpg
 date: '2021-03-16'
 template: shop
