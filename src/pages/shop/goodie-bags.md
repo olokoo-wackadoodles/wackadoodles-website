@@ -1,5 +1,5 @@
 ---
-title: Goodie Bags
+title: Drawstring Backpack
 main_image: images/wackadoodles-welcome-to-our-family-cover.jpg
 additional_images:
   - images/wackadoodles-welcome-to-our-family-cover.jpg
