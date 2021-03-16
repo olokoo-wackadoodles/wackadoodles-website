@@ -1,6 +1,6 @@
 ---
 title: Drawstring Backpack
-main_image: images/wackadoodles-welcome-to-our-family-cover.jpg
+main_image: images/green-drawstring-1.jpg
 additional_images:
   - images/wackadoodles-welcome-to-our-family-cover.jpg
   - images/wackadoodles-welcome-to-our-family-cover.jpg
