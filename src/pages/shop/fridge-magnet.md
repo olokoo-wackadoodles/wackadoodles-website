@@ -9,6 +9,6 @@ additional_images:
 date: '2021-03-16'
 template: shop
 main_image: images/pen-4.jpg
-title: Refridgerator Magnets
+title: Refrigerator Magnets
 ---
 Funky pen with fuzzy hair and a big Wackadoodle smile can be used to write all of your thoughts.
