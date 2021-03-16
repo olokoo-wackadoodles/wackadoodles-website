@@ -1,5 +1,5 @@
 ---
-title: It's Nice to be Kind
+title: Random Color Pen
 short_description: Books will be signed by author.
 shop_link: lorem-ipsum
 price: $10.00
