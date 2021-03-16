@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: 'It''s Nice '
 short_description: lorem-ipsum
 shop_link: lorem-ipsum
 price: lorem-ipsum
