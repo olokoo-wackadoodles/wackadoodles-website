@@ -7,7 +7,7 @@ additional_images:
   - images/wackadoodles-welcome-to-our-family-cover.jpg
 shop_link: 'https://squareup.com/'
 date: '2016-09-04'
-short_description: 12 "x 16" neon green drawstring backpack.
+short_description: Neon green drawstring backpack.
 price: $13.00
 template: shop
 ---
