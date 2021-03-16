@@ -1,8 +1,7 @@
 ---
 title: Drawstring Backpack
 main_image: images/green-drawstring-1.jpg
-additional_images:
-  - null
+additional_images: []
 shop_link: 'https://squareup.com/'
 date: '2016-09-04'
 short_description: Neon green drawstring backpack.
