@@ -5,7 +5,6 @@ shop_link: lorem-ipsum
 price: $10.00
 additional_images:
   - images/crayons-1.jpg
-  - null
 date: '2021-03-16'
 template: shop
 main_image: images/coloring-book-1.jpg
