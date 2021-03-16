@@ -1,5 +1,5 @@
 ---
-title: 'It''s Nice '
+title: It's Nice to be Kind
 short_description: lorem-ipsum
 shop_link: lorem-ipsum
 price: lorem-ipsum
