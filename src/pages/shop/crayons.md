@@ -1,5 +1,5 @@
 ---
-title: 3-Pack Pens
+title: Crayons
 short_description: You will recieve 3 pens.
 shop_link: lorem-ipsum
 price: $10.00
