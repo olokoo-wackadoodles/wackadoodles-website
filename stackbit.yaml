@@ -209,7 +209,6 @@ models:
       - type: list
         name: additional_images
         label: Additional Images
-        required: true
         items:
           type: image
           label: Additional Image
