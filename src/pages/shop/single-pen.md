@@ -1,6 +1,6 @@
 ---
 title: Random Color Pen
-short_description: Books will be signed by author.
+short_description: Pen color will be chosen randomly.
 shop_link: lorem-ipsum
 price: $10.00
 additional_images:
