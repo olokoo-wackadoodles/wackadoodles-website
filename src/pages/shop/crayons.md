@@ -5,7 +5,7 @@ shop_link: lorem-ipsum
 price: $10.00
 additional_images:
   - images/crayons-1.jpg
-  - images/pen-2.jpg
+  - null
   - images/pen-3.jpg
 date: '2021-03-16'
 template: shop
