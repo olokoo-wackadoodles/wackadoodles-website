@@ -3,7 +3,6 @@ short_description: You will recieve 3 pens.
 shop_link: lorem-ipsum
 price: $4.00
 additional_images:
-  - null
   - images/pen-2.jpg
   - images/pen-3.jpg
 date: '2021-03-16'
