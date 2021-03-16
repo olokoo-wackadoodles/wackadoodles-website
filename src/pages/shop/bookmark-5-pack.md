@@ -8,4 +8,4 @@ date: '2021-03-16'
 template: shop
 main_image: images/bookmark-1.jpg
 ---
-Cracy Wackadoodle book marks to help you keep track of your reading!
+Cracy Wackadoodle bookmarks to help you keep track of your reading!
