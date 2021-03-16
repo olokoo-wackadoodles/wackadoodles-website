@@ -3,7 +3,6 @@ title: Drawstring Backpack
 main_image: images/green-drawstring-1.jpg
 additional_images:
   - images/wackadoodles-welcome-to-our-family-cover.jpg
-  - null
 shop_link: 'https://squareup.com/'
 date: '2016-09-04'
 short_description: Neon green drawstring backpack.
