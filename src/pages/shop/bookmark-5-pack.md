@@ -1,5 +1,5 @@
 ---
-title: Book Marks (5-pack)
+title: Bookmarks (5-pack)
 short_description: 5 awesome paper book marks.
 shop_link: lorem-ipsum
 price: $3.00
