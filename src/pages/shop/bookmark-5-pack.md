@@ -1,5 +1,5 @@
 ---
-title: Random Color Pen
+title: Book Marks (5-pack)
 short_description: One pen will be chosen at random.
 shop_link: lorem-ipsum
 price: $4.00
