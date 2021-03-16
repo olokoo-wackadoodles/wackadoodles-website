@@ -3,7 +3,7 @@ title: It's Nice to be Kind
 short_description: lorem-ipsum
 main_image: images/wackadoodles-welcome-to-our-family-cover.jpg
 shop_link: lorem-ipsum
-price: $
+price: $10.00
 additional_images: []
 date: '2021-03-16'
 template: shop
