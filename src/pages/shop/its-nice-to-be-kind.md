@@ -6,7 +6,6 @@ shop_link: lorem-ipsum
 price: lorem-ipsum
 additional_images: []
 date: '2021-03-16'
-price: $10.00
 template: shop
 ---
 ## Lorem ipsum
