@@ -1,5 +1,5 @@
 ---
-title: First day of school
+title: Activities and Sports
 excerpt: >-
   Halvah apple pie danish. Gingerbread topping brownie biscuit sweet roll candy
   dragée tiramisu. Toffee bonbon lemon drops chocolate cake gingerbread. Gummi
