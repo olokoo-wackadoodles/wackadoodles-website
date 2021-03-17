@@ -1,9 +1,10 @@
 ---
 title: Activities and Sports
 excerpt: >-
-  Halvah apple pie danish. Gingerbread topping brownie biscuit sweet roll candy
-  dragée tiramisu. Toffee bonbon lemon drops chocolate cake gingerbread. Gummi
-  bears cake chupa chups. Tiramisu icing pie.
+  All of our children participate in activities, from sports to dance to
+  gymnastics to chess and much more. We talk to our children about competition
+  and although it is wonderful to win, losing happens and just hope that we win
+  more than we lose.
 date: '2020-12-28'
 template: diary
 ---
