@@ -4,7 +4,7 @@ excerpt: >-
   We like to donate some of our free time to charity year round, not just a
   holiday time. We volunteer at the animal shelter, the nursing home, the
   Veterans Centers, the homeless shelters and many more. 
-date: '2020-08-22'
+date: '2020-12-02'
 template: diary
 ---
 We like to donate some of our free time to charity year round, not just a holiday time. We volunteer at the animal shelter, the nursing home, the Veterans Centers, the homeless shelters and many more. 
