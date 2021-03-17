@@ -1,9 +1,9 @@
 ---
 title: Test Diary Post
 excerpt: >-
-  Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum
-  blandit dolor elementum viverra. Sed quat a diam, aliquet tempus felis.
-  Phasellus et magna vitae nibh porttitor tempus vitae.
+  We like to donate some of our free time to charity year round, not just a
+  holiday time. We volunteer at the animal shelter, the nursing home, the
+  Veterans Centers, the homeless shelters and many more. 
 date: '2016-08-22'
 template: diary
 ---
