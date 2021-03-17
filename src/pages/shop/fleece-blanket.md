@@ -4,7 +4,7 @@ short_description: Fleece Blanket
 shop_link: lorem-ipsum
 price: $10.00
 additional_images:
-  - images/pen-1.jpg
+  - null
   - images/pen-2.jpg
   - images/pen-3.jpg
 date: '2021-03-16'
