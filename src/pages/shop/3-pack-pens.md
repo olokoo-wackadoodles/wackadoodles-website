@@ -1,7 +1,7 @@
 ---
 title: 3-Pack Pens
 short_description: You will recieve 3 pens.
-shop_link: lorem-ipsum
+shop_link: 'https://checkout.square.site/buy/XM2ARO6FSUEP4P4EKLDYWFVE'
 price: $10.00
 additional_images:
   - images/pen-1.jpg
