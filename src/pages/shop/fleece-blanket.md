@@ -1,6 +1,6 @@
 ---
 title: Fleece Blanket
-short_description: You will recieve 3 pens.
+short_description: Fleece Blanket
 shop_link: lorem-ipsum
 price: $10.00
 additional_images:
