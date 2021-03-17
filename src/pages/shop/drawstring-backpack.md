@@ -2,7 +2,7 @@
 title: Drawstring Backpack
 main_image: images/green-drawstring-1.jpg
 additional_images: []
-shop_link: 'https://squareup.com/'
+shop_link: 'https://checkout.square.site/buy/P3EMC7KIAQS7ZEM5RSC2F3J7'
 date: '2016-09-04'
 short_description: Neon green drawstring backpack.
 price: $13.00
