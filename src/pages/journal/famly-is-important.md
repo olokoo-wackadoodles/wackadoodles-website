@@ -4,7 +4,6 @@ excerpt: >-
   Halvah apple pie danish. Gingerbread topping brownie biscuit sweet roll candy
   dragée tiramisu. Toffee bonbon lemon drops chocolate cake gingerbread. Gummi
   bears cake chupa chups. Tiramisu icing pie.
-date: '2021-08-28'
 template: diary
 ---
 As a family, we try to stay positive, but from time to time, one of us has a bad day and is sad. We know that we cannot have a great day every day, but we do our best to stay positive and talk about our respective days around the dinner table. 
