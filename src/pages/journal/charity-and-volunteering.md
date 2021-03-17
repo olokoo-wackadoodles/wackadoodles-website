@@ -1,5 +1,5 @@
 ---
-title: Test Diary Post
+title: Charity and Volunteering
 excerpt: >-
   We like to donate some of our free time to charity year round, not just a
   holiday time. We volunteer at the animal shelter, the nursing home, the
