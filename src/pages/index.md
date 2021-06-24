@@ -26,7 +26,7 @@ sections:
     show_section_heading: true
     section_heading_text: Recent Feed
     instagram_access_token: >-
-      IGQVJYd0x6NWJzRm53VUJkTS1HcndUb3h5MnR6VXRwdGs3QV9vNTRSUTFUNEFzTTFlVWlMR09fTThvMUZAiWFE4Qk1FQlEyNExJTEJNZAENlQzhRY3hLREVYbk1EaHJKSkNIR2VXaWw4WUV2aVExcG5hd2JXNm4wOENDWU9v
+      IGQVJYVndXaHlCaGhqMjhiWTQ0S1NmMXBSSmhERU54REpXMVR6RXhoSjBVYzdoR0p6M1NJQzEtVS0zLUp1RjJYTEk2SGlYTnR6dWVTUWUtOUg5RWwtYko5WURuOUs4RWJlNkpCbFFn
     posts_to_show: 6
     type: section_instagram_feed
 template: advanced
