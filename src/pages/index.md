@@ -27,5 +27,7 @@ sections:
     section_heading_text: Recent Feed
     posts_to_show: 6
     type: section_instagram_feed
+    instagram_access_token: >-
+      IGQVJWc0Q4STJwc1Y5THllbW9PdV9WTWdGTkVnelNidmV1WE5tcUZArSVVhZAjVkVlVQbDF2QWZAqZA1JuY0RDNnNSMU5taWFKSlM4djVKSTJTUTFXUXphOGlpSHlJc0tRRkh1cnJBQTJn
 template: advanced
 ---
