@@ -1,6 +1,20 @@
 .instagram-feed {
-    .instagram-feed-item {
+    .instagram-feed-link {
+        position: relative;
         width: 100%;
+        display: block;
+        &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+    }
+    .instagram-feed-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
         border-radius: $site-border-radius;
     }
 }
