@@ -25,8 +25,8 @@ sections:
     section_id: recent-insta-feed
     show_section_heading: true
     section_heading_text: Recent Feed
-    instagram_access_token: >-
-      IGQVJYd0x6NWJzRm53VUJkTS1HcndUb3h5MnR6VXRwdGs3QV9vNTRSUTFUNEFzTTFlVWlMR09fTThvMUZAiWFE4Qk1FQlEyNExJTEJNZAENlQzhRY3hLREVYbk1EaHJKSkNIR2VXaWw4WUV2aVExcG5hd2JXNm4wOENDWU9v
+    olokoo_access_token: z9mLjeMMHdJE65zp6AqSq8hNsMJyy9LxahDxhhf5M8sTcXwZGC
+    integration_uuid: 237c7844-d437-11eb-986e-06afad7f9adb
     posts_to_show: 6
     type: section_instagram_feed
 template: advanced

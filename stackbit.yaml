@@ -345,5 +345,8 @@ models:
         name: posts_to_show
         label: Posts To Show
       - type: string
-        name: instagram_access_token
-        label: Instagram Access Token
+        name: olokoo_access_token
+        label: Olokoo Access Token (OAT)
+      - type: string
+        name: integration_uuid
+        label: Integration UUID

@@ -10,16 +10,17 @@ export default class SectionInstagramFeed extends React.Component {
 
         const InstagramFeed = () => {
             let photos = useInstagramFeed({
-                accessToken: _.get(section, 'instagram_access_token', null),
+                accessToken: _.get(section, 'olokoo_access_token', null),
+                integration: _.get(section, 'integration_uuid', null),
                 photoCount: _.get(section, 'posts_to_show', null) || 12,
             });
             return (
                 <div className="instagram-feed row">
                     {photos &&
-                        photos.map(({ id, caption, media_url, permalink }) => (
+                        photos.map(({ id, text, src, link }) => (
                         <div className="col-1-3" key={id}>
-                            <a href={permalink} target="_new" className="instagram-feed-link">
-                                <img className="instagram-feed-item" src={media_url} alt={caption} />
+                            <a href={link} target="_new" className="instagram-feed-link">
+                                <img className="instagram-feed-item" src={src} alt={text} />
                             </a>
                         </div>
                         )
