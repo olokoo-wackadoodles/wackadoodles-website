@@ -24,7 +24,7 @@ sections:
   - title: Instagram Feed
     section_id: recent-insta-feed
     show_section_heading: true
-    section_heading_text: Recent Feed
+    section_heading_text: Our Instagram Feed
     posts_to_show: 6
     type: section_instagram_feed
     instagram_access_token: >-
