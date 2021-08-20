@@ -7,9 +7,21 @@ export const useInstagramFeed = ({ accessToken, integration, photoCount }) => {
 		async function getInstaFeed() {
 			const url = `https://api.olokoo.com/instagram/feed?oat=${accessToken}&uuid=${integration}`;
 			const response = await fetch(url);
-			const { feed } = await response.json();
+			var { feed } = await response.json();
 
-			setPhotos(feed);
+			var photos = [];
+
+			feed.forEach(photo => {
+				if (photo.type === 'IMAGE' || photo.type === 'CAROUSEL_ALBUM') {
+					photos.push(photo);
+				}
+			});
+
+			if (photos && photos.length > photoCount) {
+				photos = photos.slice(0, photoCount);
+			}
+
+			setPhotos(photos);
 		}
 		getInstaFeed();
 	}, []);
