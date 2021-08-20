@@ -29,5 +29,6 @@ sections:
     type: section_instagram_feed
     instagram_access_token: >-
       IGQVJWc0Q4STJwc1Y5THllbW9PdV9WTWdGTkVnelNidmV1WE5tcUZArSVVhZAjVkVlVQbDF2QWZAqZA1JuY0RDNnNSMU5taWFKSlM4djVKSTJTUTFXUXphOGlpSHlJc0tRRkh1cnJBQTJn
+    olokoo_access_token: ZTdmZWNjNWEtMDE1My0xMWVjLThjYmQtMGE5ZTFjMGIxYWE1
 template: advanced
 ---
