@@ -1,5 +1,5 @@
 ---
-title: 'Bundle #1'
+title: 'Bundle #2'
 short_description: >-
   The two books with matching coloring books, color box, fun, crazy pen,
   Wackadoodle stickers and magnet, book marker, bottle of bubbles. It also
