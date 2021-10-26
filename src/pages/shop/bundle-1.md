@@ -9,6 +9,7 @@ price: lorem-ipsum
 additional_images: []
 date: '2021-10-26'
 template: shop
+main_image: images/728803B6-1C89-4576-85B1-A4B9AA337DFD.jpeg
 ---
 ## Lorem ipsum
 
