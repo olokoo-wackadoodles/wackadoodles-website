@@ -5,7 +5,7 @@ short_description: >-
   Wackadoodle stickers and magnet, book marker, bottle of bubbles. It also
   includes a fun blanket and pillowcase.
 shop_link: 'https://square.link/u/eUrqeHpx'
-price: lorem-ipsum
+price: '50'
 additional_images: []
 date: '2021-10-26'
 template: shop
