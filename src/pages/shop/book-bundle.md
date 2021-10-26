@@ -1,7 +1,7 @@
 ---
 title: Book Bundle
 short_description: lorem-ipsum
-shop_link: lorem-ipsum
+shop_link: 'https://square.link/u/WTpjFJmZ'
 price: lorem-ipsum
 additional_images: []
 date: '2021-10-26'
