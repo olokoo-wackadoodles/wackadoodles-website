@@ -18,7 +18,7 @@ sections:
     has_more_link: true
     more_link_text: Read more
     show_section_heading: true
-    section_heading_text: Recent Journal Entries
+    section_heading_text: Recent Journal Entries 2
     entries_to_show: 2
     type: section_diary_entries
   - title: Instagram Feed
