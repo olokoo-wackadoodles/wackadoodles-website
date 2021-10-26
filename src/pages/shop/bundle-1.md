@@ -1,6 +1,9 @@
 ---
 title: 'Bundle #1'
-short_description: lorem-ipsum
+short_description: >-
+  The two books with matching coloring books, color box, fun, crazy pen,
+  Wackadoodle stickers and magnet, book marker, bottle of bubbles. It also
+  includes a fun blanket and pillowcase.
 shop_link: lorem-ipsum
 price: lorem-ipsum
 additional_images: []
