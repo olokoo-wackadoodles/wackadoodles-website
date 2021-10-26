@@ -8,7 +8,7 @@ shop_link: 'https://square.link/u/WTpjFJmZ'
 price: lorem-ipsum
 additional_images:
   - images/wackadoodles-welcome-to-our-family-cover.jpeg
-  - null
+  - images/cover-book-2-300x292-6a5efe12.jpeg
 date: '2021-10-26'
 template: shop
 main_image: images/Both Books.png
