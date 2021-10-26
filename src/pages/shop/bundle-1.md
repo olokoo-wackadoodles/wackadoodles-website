@@ -7,7 +7,7 @@ short_description: >-
 shop_link: 'https://square.link/u/eUrqeHpx'
 price: '50'
 additional_images:
-  - null
+  - images/913CCE20-F1B5-4B56-B35E-84FBD8AB5625.jpeg
 date: '2021-10-26'
 template: shop
 main_image: images/728803B6-1C89-4576-85B1-A4B9AA337DFD.jpeg
