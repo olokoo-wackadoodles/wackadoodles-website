@@ -1,5 +1,5 @@
 ---
-title: Its Nice to be Kind
+title: Random Color Pen
 short_description: One pen will be chosen at random.
 shop_link: 'https://square.link/u/33YbhLqm'
 price: $4.00
