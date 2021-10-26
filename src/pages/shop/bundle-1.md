@@ -6,7 +6,8 @@ short_description: >-
   includes a fun blanket and pillowcase.
 shop_link: 'https://square.link/u/eUrqeHpx'
 price: '50'
-additional_images: []
+additional_images:
+  - null
 date: '2021-10-26'
 template: shop
 main_image: images/728803B6-1C89-4576-85B1-A4B9AA337DFD.jpeg
