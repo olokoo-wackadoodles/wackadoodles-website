@@ -8,7 +8,7 @@ shop_link: 'https://square.link/u/eUrqeHpx'
 price: '50'
 additional_images:
   - images/913CCE20-F1B5-4B56-B35E-84FBD8AB5625.jpeg
-  - null
+  - images/479FED18-AF5D-4A5E-BB7D-F1F28E3B8640.jpeg
 date: '2021-10-26'
 template: shop
 main_image: images/728803B6-1C89-4576-85B1-A4B9AA337DFD.jpeg
