@@ -9,6 +9,7 @@ price: lorem-ipsum
 additional_images: []
 date: '2021-10-26'
 template: shop
+main_image: images/Both Books.png
 ---
 ## Lorem ipsum
 
