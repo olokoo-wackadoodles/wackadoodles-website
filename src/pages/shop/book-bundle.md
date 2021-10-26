@@ -2,8 +2,8 @@
 title: Book Bundle
 short_description: >-
   Includes both books: We are the Wackadoodles, Welcome to our blended family
-  and We are the Wackadoodles, It's Nice to be Kind. Both books signed by
-  author.
+  and We are the Wackadoodles, It's Nice to be Kind. Both books will be signed
+  by author.
 shop_link: 'https://square.link/u/WTpjFJmZ'
 price: $19.00
 additional_images:
