@@ -1,6 +1,6 @@
 ---
 title: Book Bundle
-short_description: lorem-ipsum
+short_description: Includes both books. Both books signed by author.
 shop_link: 'https://square.link/u/WTpjFJmZ'
 price: lorem-ipsum
 additional_images: []
