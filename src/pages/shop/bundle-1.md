@@ -3,7 +3,7 @@ title: 'Bundle #1'
 short_description: >-
   The two books with matching coloring books, color box, fun, crazy pen,
   Wackadoodle stickers and magnet, book marker, bottle of bubbles. It also
-  includes a fun blanket and pillowcase.
+  includes a fun blanket and pillowcase. 
 shop_link: 'https://square.link/u/eUrqeHpx'
 price: $50.00
 additional_images:
