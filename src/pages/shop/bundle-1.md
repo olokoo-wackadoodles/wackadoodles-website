@@ -4,7 +4,7 @@ short_description: >-
   The two books with matching coloring books, color box, fun, crazy pen,
   Wackadoodle stickers and magnet, book marker, bottle of bubbles. It also
   includes a fun blanket and pillowcase.
-shop_link: lorem-ipsum
+shop_link: 'https://square.link/u/eUrqeHpx'
 price: lorem-ipsum
 additional_images: []
 date: '2021-10-26'
