@@ -9,7 +9,7 @@ price: $19.00
 additional_images:
   - images/cover-book-2-300x292-6a5efe12.jpeg
   - images/wackadoodles-welcome-to-our-family-cover.jpeg
-date: '2021-10-20'
+date: '2021-10-01'
 template: shop
 main_image: images/Both Books.png
 ---
