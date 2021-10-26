@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Book Bundle
 short_description: lorem-ipsum
 shop_link: lorem-ipsum
 price: lorem-ipsum
